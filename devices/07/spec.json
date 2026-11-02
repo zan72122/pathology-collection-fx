@@ -1,0 +1,366 @@
+{
+  "specVersion": "PEARL-G2-R2",
+  "createdUTC": "2026-10-19T18:14:17.929929+00:00",
+  "deviceId": "07",
+  "scope": "Pre-start manual basket transfer and prepared single water step only",
+  "identity": {
+    "manufacturer": "Leica Biosystems",
+    "model": "HistoCore PEARL",
+    "shortLabel": "HistoCore PEARL",
+    "catalog": "NOT_CONFIRMED",
+    "configurationLabelJa": "固定外形187ID・1合成バスケットの手動搬入と清水一工程",
+    "selection": "agent-selected exterior candidate, not user-selected or manufacturer-approved",
+    "ifu": "English/Japanese V1.9 Rev L 03.2026; SNfrom2212 reference series only",
+    "voltage": "UNCONFIRMED 100–120 or220–240V; no live wiring",
+    "basketCount": "one teaching fixture; no real capacity acceptance",
+    "reagents": "UNCONFIRMED; exterior bottles unlabeled by chemistry",
+    "program": "water 120s reference step only, not full processing"
+  },
+  "geometry": {
+    "closedEnvelope": {
+      "value": {
+        "width": 0.6,
+        "depth": 0.71,
+        "height": 1.32
+      },
+      "units": "metres",
+      "source": "IFU p20 unpacked dimensions",
+      "interpretation": "educational envelope includes fixed screen/casters; OEM protrusion/open-state boundary definition unknown"
+    },
+    "installation": {
+      "approxFootprint": [
+        0.7,
+        0.8
+      ],
+      "wallFurnitureMinimumM": 0.1,
+      "source": "IFU p24",
+      "referenceEnvironment": "floor standing on casters; rear wall .25m behind instrument,1m educational front space; not mandated service dimension"
+    },
+    "knownFeatures": [
+      "left retort closed separate lid and front latch",
+      "right counter with screen toward rear",
+      "one common closed paraffin oven cover with recessed central handle",
+      "open two-row seven-position bottle storage:11processing+2cleaning+1condensate",
+      "lower-right condensate bottle in front view",
+      "independent bottom tray and casters",
+      "rear moving handles2,remote/local alarms,USB2,mains input/switch,fuses2,exhaust box and upward pipe",
+      "networkjacks2 physically blocked, not functionalLAN"
+    ],
+    "unknown": [
+      "local dimensions and profile curvatures",
+      "screen angle",
+      "lid axis and travel",
+      "oven cover hinge exact axis",
+      "bottle/bath stroke",
+      "rear lowerpanel detail",
+      "power variant"
+    ]
+  },
+  "sourceLedger": [
+    {
+      "file": "14049380101L_PEARL_IFU_1v9L_en.pdf",
+      "sha256": "7c2667f26c1ab25ac874a19709e8f054042af7703401f2cabd93ce77503ce8a0",
+      "use": "manufacturer research reference, not redistributable model texture"
+    },
+    {
+      "file": "14049380108L_PEARL_IFU_1v9L_ja.pdf",
+      "sha256": "1c8a76fdca4dd36faa367352b4993dd342ac924da9ac1c09fb92336640bdefa2",
+      "use": "manufacturer research reference, not redistributable model texture"
+    },
+    {
+      "file": "official-photo-2.webp",
+      "sha256": "b3b86fbbb51cf1693cb8277b724b8de372f46099d7b9602aada192eb330cf3ae",
+      "use": "manufacturer research reference, not redistributable model texture"
+    },
+    {
+      "file": "official-photo-3.webp",
+      "sha256": "9731400410f596214976b1bbb53ad836a836bce2a1eb7050dc7d84882bc440e4",
+      "use": "manufacturer research reference, not redistributable model texture"
+    },
+    {
+      "file": "official-photo-4.webp",
+      "sha256": "380ae0e3c50268aa45e2539cce7ceb64908cc6b5c9586b2bad96c88b1912cf96",
+      "use": "manufacturer research reference, not redistributable model texture"
+    }
+  ],
+  "sourceEntry": "https://files.leicabiosystems.com/en?keycode=PEARL",
+  "visualEvidence": {
+    "front": "IFU p17Fig1 open, official-photo-2 closed",
+    "rear": "IFU p18Fig2 close-up; lowerrear unknown",
+    "side": "official-photo-2 oblique only",
+    "top": "IFU p17 and closed officialphoto; no calibrated orthographic",
+    "actualImagesViewed": [
+      "official-photo-2.webp",
+      "pages/en-p17.png",
+      "pages/en-p18.png",
+      "pages/en-p20.png"
+    ]
+  },
+  "causalDesign": {
+    "status": "PARTIAL_PRESTART_TRANSFER_AND_WATER",
+    "principle": "Specimen remains in retort while compatible processing reagent/paraffin fills and drains; no specimen transport between bottles. Dehydration,clearing and infiltration require separately grounded selected reagents/program before operation implementation.",
+    "states": [
+      "specimen identity/location/history",
+      "retort lid/seal/level/temperature/pressure",
+      "reservoir volumes/identities/connections",
+      "paraffin melt status",
+      "programstep/immersiontime/fill-drain phases",
+      "RMS/service alarms/user role"
+    ],
+    "constraints": [
+      {
+        "requirement": "Duration refers to immersion not total cycle includingfill/drain/heating",
+        "source": "p87"
+      },
+      {
+        "requirement": "Pause request waits current fill/drain completion; pause >15min cannot resume",
+        "source": "p85"
+      },
+      {
+        "requirement": "Finish drains paraffin, remove basket, cleaning required; cleaning not for tissue",
+        "source": "p85,88"
+      },
+      {
+        "requirement": "BottleCheck,levelsensor,seals,melt,reagentcompatibility,RMS,role-specificpauseabort to be grounded before implementation",
+        "source": "p21,30,81–85"
+      }
+    ]
+  },
+  "plannedOperations": [
+    {
+      "id": "OP01",
+      "operation": "power",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "電源・起動",
+      "designJa": "起動前点検→起動→待機を分離。警告や自己診断未完を処理可能とみなさない。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "Prepared fixture power only; startup/selftest unimplemented"
+    },
+    {
+      "id": "OP02",
+      "operation": "retort lid/latch",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "レトルト蓋とラッチ",
+      "designJa": "蓋の閉状態とラッチ状態を別に保持。運転中の開放許可は圧力・液温・排液状態の根拠が揃うまで未確定。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "Logical pre-start seal/open conditions; latch/pressure safety unimplemented"
+    },
+    {
+      "id": "OP03",
+      "operation": "load/remove baskets",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "バスケット搬入・回収",
+      "designJa": "試料IDとバスケットIDを保持してレトルトへ搬入。液体交換中も試料位置はレトルト内に留める。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "Pre-start counter/retort manual transfer, one holder/ID, mid-path restore; postprocess removal unimplemented"
+    },
+    {
+      "id": "OP04",
+      "operation": "bottle remove/replace",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "試薬容器交換",
+      "designJa": "容器ID・位置・内容・交換記録を分離。容器移動だけで試薬の種類や残量を自動確定しない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP05",
+      "operation": "oven common cover",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "オーブン共通カバー",
+      "designJa": "共通カバーの開閉と各パラフィン槽の準備を分離。外形開閉だけで加熱完了にしない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP06",
+      "operation": "paraffin baths",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "パラフィンバス",
+      "designJa": "槽の存在、設定温度、溶融確認、量の確認を別状態にする。選定パラフィンが未確定のため溶融時間を作らない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP07",
+      "operation": "bottom tray",
+      "status": "PARTIAL_ROUGH_INSPECTION",
+      "nameJa": "下トレー",
+      "designJa": "下トレーの挿入状態と回収液・清掃状態を区別。試薬排出先と同一扱いしない。",
+      "implementation": "PARTIAL_ROUGH_INSPECTION",
+      "implementedScope": "empty tray first20cm pose only; no removal, liquid or cleaning",
+      "tests": [
+        "TRAY-RANGE",
+        "TRAY-RESTORE",
+        "NORMAL3D-TRAY",
+        "GEOM-3POSES"
+      ]
+    },
+    {
+      "id": "OP08",
+      "operation": "BottleCheck",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "BottleCheck",
+      "designJa": "接続と充填可能性の点検結果を扱う。合格が試薬の化学的適合・鮮度を保証するとは表示しない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP09",
+      "operation": "program selection",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "プログラム選択",
+      "designJa": "参照プログラム選定→条件の確認→適用候補にする。未選定の処理時間・温度・圧力を既定値で補わない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP10",
+      "operation": "reagent/RMS setup",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "試薬・RMS設定",
+      "designJa": "容器の割当とRMS履歴を分離。RMSの記録から実測濃度を捏造しない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP11",
+      "operation": "start processing",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "運転開始",
+      "designJa": "試料、蓋、液体、温度準備、プログラムの必要条件を点検してから開始候補へ。許可条件はIFU適用照合後に実装する。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "Fixed water fixture start preconditions only"
+    },
+    {
+      "id": "OP12",
+      "operation": "fill",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "レトルト充填",
+      "designJa": "選択した容器からレトルトへの流入を示し、試料は動かさない。流量と液量センサの実機閾値は未確定。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "Schematic volume and contact-linked fill"
+    },
+    {
+      "id": "OP13",
+      "operation": "immerse with temperature/pressure",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "温度・圧力を伴う浸漬",
+      "designJa": "温度・圧力の状態と脱水・透徹・浸透の定性的因果を表示予定。組織や薬品に依存する浸透率・完了精度は数値保証しない。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "120s water soak/contact; no temperature pressure chemistry"
+    },
+    {
+      "id": "OP14",
+      "operation": "drain",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "排出",
+      "designJa": "レトルトから該当する回収先への移送を表す。異種液混入と残液をゼロと仮定しない。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "Ideal return to same water source; no residual/cleanliness acceptance"
+    },
+    {
+      "id": "OP15",
+      "operation": "pause/resume",
+      "status": "PARTIAL_LIMITED_TEACHING",
+      "nameJa": "一時停止・再開",
+      "designJa": "停止要求、実際の安全状態、再開可能条件を分ける。タイマー停止だけで安全開放できるとは扱わない。",
+      "implementation": "PARTIAL_LIMITED_TEACHING",
+      "implementedScope": "Limited pause/resume; actual timing/individual validation pending"
+    },
+    {
+      "id": "OP16",
+      "operation": "abort",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "中止",
+      "designJa": "中止要求と排液・回復手順を分離。中止ボタン直後に処理完了や標本回収可能へ遷移しない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP17",
+      "operation": "finish/remove",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "終了・標本回収",
+      "designJa": "終了と回収許可を分け、同一の試料IDを回収。終了表示から組織品質の保証へ飛躍させない。",
+      "implementation": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP18",
+      "operation": "cleaning",
+      "status": "NOT_IMPLEMENTED",
+      "nameJa": "洗浄",
+      "designJa": "標本回収後の洗浄段階と使用可能判定を分離。洗浄液・順序・条件の採用前は完了状態を生成しない。",
+      "implementation": "NOT_IMPLEMENTED"
+    }
+  ],
+  "acceptance": {
+    "P0": [
+      "No false operating outcomes",
+      "No specimen transport between bottles",
+      "No false manufacturerCAD accuracy",
+      "G1/G2 and completion remain false"
+    ],
+    "P1": [
+      "Nominal overall envelope matches savedmodel",
+      "correctclosedfront hierarchy and14bottles",
+      "backphysicalconnections sourcegrounded",
+      "native save/reopen andGLB transformbounds",
+      "sixview+grey actualvisualinspection",
+      "typecheck/build",
+      "ordinarybrowserQA whereavailable"
+    ],
+    "P2": [
+      "estimated localcurves labeled",
+      "narrowlayout",
+      "partfocus reveals selectedside"
+    ]
+  },
+  "g1Approved": false,
+  "g2Approved": false,
+  "accepted": false,
+  "nightRefinement": {
+    "baseline": "[local-path-redacted]",
+    "version": "PEARL-G1-R2",
+    "scope": "external detail and bottom tray inspection pose only",
+    "source": "S1 V1.9 RevL p17 Fig1, p38 Fig22",
+    "roughOperation": "bottom tray first20cm inspection, no full removal/liquid handling",
+    "drawerAxis": "GLB+Z / Blender-Y",
+    "rangeMetres": [
+      0,
+      0.2
+    ],
+    "notMechanicalStop": true,
+    "inputGain": "100px for200mm educational input sensitivity",
+    "limits": [
+      "local tray wall thickness inferred",
+      "entire retort/pump process not connected",
+      "no pressure/heat/chemical interlocks asserted"
+    ],
+    "g1Approved": false,
+    "g2Approved": false
+  },
+  "g2": {
+    "model": "pearl-water-step/0.2",
+    "clock": "integer ms manual common clock",
+    "source": "IFU V1.9 RevL p75-87",
+    "documented": {
+      "soakSeconds": 120,
+      "pauseBeyondMinutes": 15
+    },
+    "schematic": {
+      "stockML": 3400,
+      "targetML": 2000,
+      "coverML": 1500,
+      "flowMLs": 100,
+      "pauseClock": "since effective pause",
+      "pauseSoakTimer": "stopped",
+      "residualLiquid": "ideal zero, not cleanliness"
+    },
+    "wholeOperationsComplete": 0,
+    "limitedCategories": "R1 12 limited categories retained; R2 TR01–TR11 focused tests",
+    "transfer": {
+      "source": "IFU V1.9 RevL p30,33,34,81,83–85",
+      "scope": "pre-start only; operator holder; no real automatic transporter",
+      "durationMs": 3000,
+      "units": "metres",
+      "path": "lift 0.3, horizontal counter(-0.4,0.75,0.55) to retort(-0.7,0.75,0.1), lower",
+      "numerics": "schematic, not manufacturer measurements",
+      "save": "schema2; strict R1 schema1 migration preserves legacy-retort origin and events; old journal read-only"
+    }
+  },
+  "updatedUTC": "2026-10-27T05:46:10.780644+00:00"
+}

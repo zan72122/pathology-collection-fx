@@ -1,0 +1,1 @@
+export{t as OpenPBRMaterialLoadingAdapter}from"./openpbrMaterialLoadingAdapter-C3_Gwhap.js";

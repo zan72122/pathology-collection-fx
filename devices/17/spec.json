@@ -1,0 +1,342 @@
+{
+  "deviceId": "17",
+  "specVersion": "1300A2-1305-G2-R4",
+  "identity": {
+    "manufacturer": "Thermo Scientific",
+    "model": "1300 Series A2 / 1305",
+    "catalog": "1305",
+    "configuration": "4ft;8inch working opening;120V;one-piece stainless interior;cabinet only;no optional UV,stand,duct or valves",
+    "selection": "G1 R2 explicitly approved by user 2026-10-26 11:37UTC; no G2 approval",
+    "generation": "Operating Manual7021355Rev20 08/05/22;brochure EXT3202 0722"
+  },
+  "geometry": {
+    "closedEnvelope": {
+      "value": {
+        "width": 1.3,
+        "depth": 0.8,
+        "height": 1.568
+      },
+      "unit": "m",
+      "source": "IFU7-1 cabinet body excluding reference plinth"
+    },
+    "workingOpening": {
+      "height": 0.203,
+      "unit": "m"
+    },
+    "referencePlinthHeight": 0.65,
+    "workTrayHeightReference": 0.85
+  },
+  "operations": [
+    {
+      "id": "BSC17-01",
+      "name": "設置と認証",
+      "design": "合成設置/専門認証報告書を照合。移設/年次期限/内部整備カードで教材確認を失効。実物認証は未確認。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; stateful educational boundary; real equipment acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-02",
+      "name": "型式開口照合",
+      "design": "1305は8インチ開口・120V・ステンレス内装。10インチ型やB2と混同しない。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; verified teaching unit; actual equipment conditions unverified",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-03",
+      "name": "窓位置",
+      "design": "閉鎖/203mm作業/535mm搬入の3代表姿勢。連続窓軌跡は未検証。",
+      "implemented": false,
+      "g1Coverage": "窓3代表姿勢",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-04",
+      "name": "送風開始",
+      "design": "送風開始と作業位置、手動の安定信号を区別。実モーター/センサー制御は未接続。",
+      "implemented": false,
+      "g1Coverage": "送風と手入力の模式信号",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-05",
+      "name": "HEPAと循環",
+      "design": "供給HEPAと排気HEPAを区別。室内気と循環気の混合・ろ過を設計、精密内部経路未実装。",
+      "implemented": false,
+      "g1Coverage": "経路説明のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-06",
+      "name": "前面流入",
+      "design": "前面グリルへの吸込みと外部ドラフトを区別。流れ線や粒子が封じ込め性能を証明すると扱わない。",
+      "implemented": false,
+      "g1Coverage": "前面配置の比較と公称参考式",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-07",
+      "name": "ダウンフロー",
+      "design": "作業域へ供給される下向き清浄気を設計。乱流や曝露を任意の矢印で保証しない。",
+      "implemented": false,
+      "g1Coverage": "模式流線のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-08",
+      "name": "搬入配置",
+      "design": "資材は搬入位置で配置。標本は作業位置・安定確認後に載置。前面グリル閉塞の反事実は教材実験。IFU4-4/4-5。",
+      "implemented": false,
+      "g1Coverage": "1合成標本の配置・回収",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-09",
+      "name": "手の移動",
+      "design": "緩やかな挿入/退出と急動作比較。急動作後は退出と再確認まで参考科学計算対象外という教材規則。実速度/乱流/回復時間は未モデル。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; stateful educational boundary; real equipment acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-10",
+      "name": "照明",
+      "design": "独立した作業灯状態と3D照明。実照度は未検証。",
+      "implemented": false,
+      "g1Coverage": "独立照明状態",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-11",
+      "name": "庫内電源",
+      "design": "送風と独立した庫内電源状態（Rev20 4-2）。GFCI搭載は個体未確認、電気回路を創作しない。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-12",
+      "name": "SmartPort",
+      "design": "装備未確認/非搭載/合成搭載カードを区別。未確認のまま配線可能と扱わない。実密閉/配線/リーク試験は未実装。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; stateful educational boundary; real equipment acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-13",
+      "name": "DAVeとSmartFlow",
+      "design": "気流監視と補償、警報を設計。センサー閾値やHEPA寿命は未校正。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; verified teaching unit; actual equipment conditions unverified",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-14",
+      "name": "休止と停止",
+      "design": "窓閉鎖のstandbyとOFFを区別。全停止と作業許可を同じ状態にしない。",
+      "implemented": false,
+      "g1Coverage": "閉窓休止と停止の区別",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-15",
+      "name": "清掃と排液",
+      "design": "表面清掃/2回すすぎ/乾燥、トレー取外し、排液皿の残渣清掃/水拭き/排液/すすぎ/乾燥、紙捕集グリッド復帰と独立点検。化学的除染成功は扱わない。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; bounded functional tests verified; whole-operation acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-16",
+      "name": "異常と中断",
+      "design": "窓位置不正・気流不安定やER3〜7を区別。警報解除だけで安全復帰扱いしない。",
+      "implemented": false,
+      "g1Coverage": "前提拒否と教材中断",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; verified teaching unit; actual equipment conditions unverified",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-17",
+      "name": "UVオプション",
+      "design": "1305単体の候補にはUVを搭載しない。UVモードを利用可能と表示しない。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "not applicable in selected no-UV configuration",
+      "g2Status": "NOT_APPLICABLE; absence explained; optional UV not implemented",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    },
+    {
+      "id": "BSC17-18",
+      "name": "フィルター整備",
+      "design": "専門整備必要から引継ぎ待ちへ。内部整備/除染/再認証は本教材で完了せず再開誤答を拒否。",
+      "implemented": false,
+      "g1Coverage": "設計のみ",
+      "implementationStage": "G2 limited teaching unit",
+      "g2Status": "PARTIAL; stateful educational boundary; real equipment acceptance pending",
+      "g2FullAcceptance": false,
+      "implementedMeaning": "Full operation acceptance; limited functional implementation tracked separately"
+    }
+  ],
+  "g1Approved": true,
+  "g2Approved": false,
+  "operatingBindings": 13,
+  "unknowns": [
+    "individual serial and revision",
+    "detailed plenums and full flow geometry",
+    "window sliding/cleaning trajectory",
+    "calibrated alarm settings",
+    "filter service mechanisms",
+    "certified site containment"
+  ],
+  "stage": "G2_IN_PROGRESS",
+  "coarseModel": {
+    "stateSchema": 4,
+    "sameState": [
+      "sash",
+      "blower",
+      "light",
+      "synthetic sample location and times",
+      "nominal continuity",
+      "Japanese explanation",
+      "independent outlet",
+      "cleaning sequence",
+      "tray/grid assembly and independent inspection"
+    ],
+    "scientificReference": {
+      "formula": "Q =105 ft/min *2.62 ft2 =275.1 cfm",
+      "source": "7021355 Rev20 7-9 /8-4",
+      "classification": "manufacturer nominal values in reference calculation; not actual flow"
+    },
+    "teachingOnly": [
+      "explicit steady signal",
+      "pose switching",
+      "placement zones",
+      "reference integrated volume"
+    ],
+    "clinicalResults": false,
+    "acceptanceDenominator": 18,
+    "G2AutonomyAuthorized": true
+  },
+  "scienceG2": {
+    "source": "Rev20 printed1-4,4-4,7-6; Rev22 unavailable",
+    "documented": {
+      "supplyCfm": 488,
+      "exhaustCfm": 276,
+      "totalCfm": 764
+    },
+    "teachingOnly": {
+      "mixedVolumeL": 1000,
+      "captureFraction": 0.95,
+      "pulseUnits": 100
+    },
+    "equation": "dM/dt=-(Qs*eta_supply+Qe)*M/V; exact exponential; separate supply capture/exhaust capture/exhaust pass. Qs+Qe=764. No real particle, exposure, sterile or clinical output. Off/non-nominal freezes calculation, not a physical no-flow claim.",
+    "acceptance": [
+      "G2-FLOW-01 nominal volume conservation",
+      "G2-FLOW-02 tracer mass conservation and analytic reference",
+      "G2-FLOW-03 bypass distinguishes supply from exhaust; no manufactured clinical score",
+      "G2-LOAD-01 materials max opening then sample work+steady",
+      "G2-SAVE-01 midstate/oldpending/replay/fps partition"
+    ]
+  },
+  "careG2": {
+    "sources": [
+      "Rev20 4-2",
+      "Rev20 4-6/4-7",
+      "Rev20 5-3/5-5/5-6"
+    ],
+    "scope": "teaching sequence, not physical sensors or microbiological decontamination",
+    "state": "independent outlet; sample/material removal; surface wipe,rinses2,dry; pan residue-clean,water-wipe,drain,rinse,dry; tray/grid removal/reassembly; independent inspection",
+    "unknowns": [
+      "chemistry and contact time",
+      "actual detach trajectory",
+      "actual grid dimensions",
+      "SmartPort optional configuration",
+      "GFCI per-unit presence"
+    ],
+    "teachingAccess": "load aperture required for internal cleaning, inspection and tray/grid manipulation; external drain is not a sash interlock claim",
+    "visualLimit": "tray relocated to exploded-view position only; no physical support/trajectory/collision validation; grid geometry not fabricated"
+  },
+  "acceptance": {
+    "allOperationDenominator": 18,
+    "wholeOperationAccepted": 0,
+    "limitedConnectedOperations": 17,
+    "currentUnitTests": "45/45",
+    "mutations": "9/9 detected",
+    "separateProcessRecovery": "2/2; active lesson option midstate; stale pending and stop after pending",
+    "Chromium": "normal3D specimen and hand; window reject; rapid held 28883ms; exact paused restore; option and specialist boundaries",
+    "realSafari": "actualSafari27 normal3D specimen and hand; window reject; rapid midstate clock40.4s and100units restored; option and specialist boundaries",
+    "realIOS": "UNTESTED",
+    "medicalReview": "UNTESTED",
+    "currentR3": "38/38; 7/7 mutations; separateProcess fault restore2/2; Chromium exact paused restore; actualSafari visible fault state restore",
+    "notApplicableOperations": 1,
+    "currentR4": "45/45 unit;9/9 mutations;2/2 separate-process;36 R3 migration independent checks"
+  },
+  "monitorG2": {
+    "source": "Rev20 1-3,4-1/4-2/4-3/4-4,6-1",
+    "input": "independent teaching inflow/downflow signal, not actual measured velocities",
+    "reserve": "green/yellow/red independent compensation reserve; no fabricated remaining life",
+    "acknowledgement": "visual cause retained; changed cause requires fresh teaching acknowledgement; no audio playback/actual ringback timing",
+    "thresholds": "UNVERIFIED; no numeric alarm limits set",
+    "identity": "teaching selected configuration only"
+  },
+  "lessonG2": {
+    "saveSchema": 5,
+    "configuration": "bsc17-g2/4",
+    "source": "Rev20 2-1/2-6/2-8/3-6/3-7/4-5/6-2",
+    "activation": "explicit history event; old saves migrate unstarted and retain old science",
+    "qualification": "educational applicability only, never real certification/safety",
+    "handGeometry": "proxy and click region are teaching shapes, not physical arm trajectory/contact",
+    "actualCertification": "UNVERIFIED",
+    "serviceCompletion": "NOT_IMPLEMENTED; handoff-only",
+    "migration": "strict schemas2/3/4 supported through immutable legacy validators"
+  }
+}

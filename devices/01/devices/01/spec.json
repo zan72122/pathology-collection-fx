@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "01",
+  "version": "G2-0.4.7-r47",
+  "gate": "G2_DEVELOPMENT",
+  "manufacturer": "Evident",
+  "model": "BX53F2",
+  "configuration": [
+    "BX3-ARM",
+    "U-TR30-2",
+    "WHN10X-H x2",
+    "U-D6RE: manual six-hole non-coded",
+    "UPLXAPO4X/10X/20X/40X dry",
+    "U-SVLB-4 left controls",
+    "U-HRDT-4 right thick holder",
+    "U-AC2",
+    "U-LHLEDC100"
+  ],
+  "sources": [
+    {
+      "id": "M",
+      "url": "https://adobeassets.evidentscientific.com/content/dam/mis/bx53/manuals/AX8962_10_BX53_Inst_E.pdf",
+      "version": "AX8962 10",
+      "pdfOffset": 6,
+      "viewedPdfPages": [
+        13,
+        14,
+        22,
+        23,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        42,
+        43,
+        44,
+        45,
+        46,
+        53,
+        54,
+        55,
+        64,
+        66,
+        67,
+        68
+      ],
+      "note": "PDFKitで76頁テキスト読取。PDF23/42/44/45/31を選択レンダーし実視認済み。メーカー資料は私的参照に分離。"
+    },
+    {
+      "id": "C",
+      "url": "https://adobeassets.evidentscientific.com/content/dam/downloads/847251313/M1703E_MicroscopeComponentsGuide_EN_2023_10_Web.pdf",
+      "version": "M1703E 2023-10",
+      "viewedPdfPages": [
+        31,
+        76,
+        82
+      ],
+      "note": "Part drawings, objective NA/WD, eyepiece FN22, tube split100/0 20/80 0/100. p83 nosepiece picture previously viewed, refresh before model."
+    },
+    {
+      "id": "O",
+      "url": "https://www.microscopyu.com/microscopy-basics/infinity-optical-systems",
+      "role": "General infinity optics, distinct from instrument mechanism source. Olympus tube-lens reference180mm. Ideal model, not lens prescription."
+    },
+    {
+      "id": "A",
+      "url": "https://evidentscientific.com/en/applications/advantages-of-using-the-slideview-vs200-slide-scanners-motorized-condenser-to-adjust-specimen-contrast",
+      "role": "General aperture/contrast/depth/resolution principle only; not VS200 mechanism transferred to BX53."
+    }
+  ],
+  "certaintyLevels": [
+    "confirmed",
+    "reasonable_estimate",
+    "educational_schematic",
+    "unknown"
+  ],
+  "optics": {
+    "system": "UIS2 infinity-corrected",
+    "eyepieceMagnification": 10,
+    "fieldNumberMm": 22,
+    "tubeLensFocalMm": 180,
+    "tubeLensCertainty": "educational_schematic reference from O, proprietary prescription unknown",
+    "wavelengthUm": 0.55,
+    "parfocalMm": 45.06,
+    "objectives": [
+      {
+        "id": "4",
+        "bay": 1,
+        "magnification": 4,
+        "NA": 0.16,
+        "workingDistanceMm": 13,
+        "color": [
+          0.8,
+          0.03,
+          0.04
+        ]
+      },
+      {
+        "id": "10",
+        "bay": 2,
+        "magnification": 10,
+        "NA": 0.4,
+        "workingDistanceMm": 3.1,
+        "color": [
+          0.9,
+          0.7,
+          0.02
+        ]
+      },
+      {
+        "id": "20",
+        "bay": 0,
+        "magnification": 20,
+        "NA": 0.8,
+        "workingDistanceMm": 0.6,
+        "color": [
+          0.03,
+          0.55,
+          0.12
+        ]
+      },
+      {
+        "id": "40",
+        "bay": 3,
+        "magnification": 40,
+        "NA": 0.95,
+        "workingDistanceMm": 0.18,
+        "color": [
+          0.04,
+          0.2,
+          0.8
+        ]
+      }
+    ],
+    "emptyBays": [
+      4,
+      5
+    ],
+    "eyepieceLightFractions": [
+      1,
+      0.2,
+      0
+    ],
+    "condenserDryNA": 0.9,
+    "condenserEngravedNA": 1.1,
+    "condenserNote": "NA>=1 requires immersion per M printed29; G1 is dry. No oil-immersion objective is fitted.",
+    "resolutionFormula": "0.61*wavelength/NA is representative Rayleigh scale, not clinical resolution prediction.",
+    "imageModel": "Depth-aware synthetic 3D cells and nuclei. Each entity has XYZ/radii; focal-depth difference modifies its point-spread footprint and peak. Not a blur of one flat image.",
+    "rayModel": "Paraxial thin-lens transfer for a selected synthetic object point; at focal plane objective output bundle is parallel, away from focus converges/diverges. Tube lens forms displaced intermediate plane; eyepiece and eye shown separately. Non-metric horizontal display scaling, physical ray arithmetic uses mm.",
+    "irisModel": "Qualitative brightfield: closing aperture lowers effective lateral NA and increases axial depth response; magnification unchanged. effectiveNA=objectiveNA*sqrt(aperture), clipped min0.1 for numerical stability. This interpolation is educational, uncalibrated, not a manufacturer optical transfer function.",
+    "illuminationModel": {
+      "referenceRadiusUm": 3000,
+      "centeringGainUm": 550,
+      "certainty": "educational_schematic",
+      "basis": "field stop and condenser define specimen-plane illumination independently from objective selection; numerical slider calibration is illustrative, not manufacturer dimensions",
+      "source": "M printed11/PDF17; standard Koehler illumination",
+      "calibrationNote": "Educational mapping only: 3000 um maximum radius chosen to cover the configured 4X FN22 field (2750 um radius) including initial centering offset. Not manufacturer diaphragm calibration."
+    }
+  },
+  "mechanics": {
+    "coordinates": {
+      "blender": "m; Z up; front -Y",
+      "babylon": "m; Y up; RH; front +Z",
+      "map": "(x,y,z)->(x,z,-y)"
+    },
+    "turret": {
+      "id": "joint.turret",
+      "parent": "joint.turret_mount",
+      "positions": 6,
+      "stepDegrees": 60,
+      "pivotBlenderM": [
+        0,
+        -0.004746712357196883,
+        0.287
+      ],
+      "tiltXDegrees": 15,
+      "radiusMm": 34,
+      "geometryCertainty": "reasonable_estimate from exterior. Six positions/manual action confirmed; tilt and radial geometry are not manufacturer CAD.",
+      "mountId": "joint.turret_mount",
+      "exchangeLoweringTargetUm": -4000,
+      "exchangeTargetCertainty": "reasonable_estimate derived clearance for rough model, not IFU numeric rule",
+      "initialBay": 0,
+      "localPivotBlenderM": [
+        0,
+        0,
+        0
+      ],
+      "socketLocalZM": -0.01,
+      "slotAssignmentCertainty": "photo-directed visual estimate: selected20, adjacent4 then10; visible green/red/yellow order better matches user photo1, exact slot numbering and actual lens identifiers not readable. Same documented 4 objectives retained; not an asserted manufacturer default."
+    },
+    "stage": {
+      "id": "joint.stage_z",
+      "parent": "device.root",
+      "nominalZM": 0.2159748942036236,
+      "travelMm": 25,
+      "rangeUm": [
+        -24820,
+        180
+      ],
+      "xRangeMm": [
+        -38,
+        38
+      ],
+      "yRangeMm": [
+        -26,
+        26
+      ],
+      "coarseUmPerTurn": 17800,
+      "fineUmPerTurn": 100,
+      "source": "M printed47/48",
+      "originCertainty": "reasonable_estimate: total travels/gains confirmed; absolute Z and central origin chosen for teaching assembly",
+      "carriage": "Simplified visible specimen carrier. Internal wires/gears are not asserted.",
+      "mountRotationDegrees": [
+        -20,
+        239
+      ],
+      "prefocusRule": "Coarse only upper stop. Fine motion is NOT restricted by pre-focusing lever: M printed21/PDF27. Mechanical absolute travel remains.",
+      "xyKnobAngleCertainty": "visual rotation per displacement is illustrative; manufacturer mm/turn for XY not available in verified sources",
+      "xyKnobAssignment": {
+        "upper": "Y",
+        "lower": "X",
+        "basis": "AX8962-10 PDF30 / printed24; diagram and text",
+        "directions": "X right/left; Y front/back confirmed. UI up-drag->positive displacement and angular sign/gain remain teaching mapping, not verified real turning sense."
+      }
+    },
+    "eyepieces": {
+      "ids": [
+        "eyepiece.left",
+        "eyepiece.right"
+      ],
+      "mountBlenderM": [
+        [
+          -0.031,
+          -0.08698742631289132,
+          0.3912
+        ],
+        [
+          0.031,
+          -0.08698742631289132,
+          0.3912
+        ]
+      ],
+      "tiltXDegrees": 60,
+      "maxDiameterMm": 41,
+      "insertionDiameterMm": 30,
+      "lengthMm": 62.6,
+      "mountCertainty": "reasonable_estimate, component diameters confirmed C82"
+    },
+    "specimen": {
+      "id": "SYNTHETIC-DEPTH-001",
+      "seed": 127,
+      "depthLayersUm": [
+        -4,
+        0,
+        4
+      ],
+      "thicknessUm": 12,
+      "slideMm": [
+        26,
+        76,
+        1
+      ],
+      "source": "M printed22 slide 26x76, thickness0.9-1.2mm",
+      "use": "educational_schematic, not patient material",
+      "coverGlassMm": 0.17
+    },
+    "contactPolicy": "GLB-derived convex-piece educational swept prediction for mounted objectives versus holder, fixings and loaded slides; never manufacturer electronic interlock. Concave holder footprints decomposed. Full service-path/browser acceptance remains pending.",
+    "rack": "Detached parts move to a labelled teaching rack, not a manufacturer accessory. Thread pitch/complex fastening is schematic.",
+    "tubeExterior": {
+      "widthMm": 175,
+      "baseDepthMm": 104.1,
+      "source": "C PDF76, top and side unit drawing",
+      "certainty": "confirmed dimensions of U-TR30-2; detailed shell profile remains visual estimate"
+    },
+    "condenserMount": {
+      "parent": "joint.stage_z",
+      "localPositionBlenderM": [
+        0,
+        -0.035,
+        -0.025
+      ],
+      "basis": "M printed53/55/57 assembly drawings: stage/condenser holders on common stage carrier; qualitative exterior coupling from public assembly, no internal drive claimed",
+      "certainty": "reasonable_estimate of full assembly coupling; detailed holder profile not manufacturer CAD",
+      "independentHeightRangeMm": [
+        -3,
+        1
+      ],
+      "lensToSlideGapAtReferenceMm": 4.5,
+      "gapCertainty": "visual exterior estimate, not a measured manufacturer working distance"
+    },
+    "holderPivot": {
+      "id": "control.holder",
+      "parent": "joint.stage_y",
+      "localPositionBlenderM": [
+        0.043,
+        0.012,
+        0.0095
+      ],
+      "opening": "right jaw rotates outward about rear hinge, approx40 degrees",
+      "certainty": "visual estimate from official U-HRDT-4 exterior image; no hidden linkage claimed"
+    },
+    "eyeErgonomics": {
+      "ipdRangeMm": [
+        50,
+        76
+      ],
+      "diopterRangeD": [
+        -8,
+        5
+      ],
+      "sources": [
+        "C PDF76 U-TR30-2",
+        "C PDF82 WHN10X-H",
+        "M printed13-14 diopter",
+        "M printed27 eyecup"
+      ],
+      "geometry": "Runtime reuses existing r36 stable IDs. IPD translation and eyecup fold are schematic; no manufacturer internal linkage asserted. Lower flange shape.3 remains fixed; barrel shape.2 rotates/translates with eyecup/eye surface. Translation uses thin lens approximation, not manufacturer thread pitch.",
+      "diopterModel": "Fixed25mm thin eyepiece, intermediate plane to ocular distance=1000/(40-D)mm. Same signed paraxial retinal spread supplies tissue blur, rescaled from15% representative rays to effective pupil, added to diffraction width. Positive ocular adjustment can compensate defocused intermediate image. Emmetropic unaccommodated eye with17mm focal length is schematic; real accommodation unmodeled.",
+      "bindings": {
+        "interpupillary": "body.tube.spacing_hinge",
+        "diopterLeft": "eyepiece.left.shape.2",
+        "diopterRight": "eyepiece.right.shape.2",
+        "eyecupLeft": "eyepiece.left.shape.4",
+        "eyecupRight": "eyepiece.right.shape.4"
+      },
+      "verification": "46 unit tests pass; new browser/pose/collision evidence pending, not G2 acceptance"
+    },
+    "twoSlideLoading": "M printed22/PDF28: rear first then front; remove front before rear. Rear insertion/removal blocked while front occupied, preserving front-to-back path.",
+    "demonstration": {
+      "liveAnchors": "loaded physical part world matrices; standard mechanical state unchanged",
+      "disclosure": "internal lens locations and path bends schematic, transverse ray display6x, selected-point marker enlarged; no OEM optical prescription",
+      "illumination": "field radius and aperture cone separate; same specimen-point illumination predicate as image",
+      "imaging": "same paraxial trace; missing objective, tube, illumination or specimen prevents corresponding path; ocular and camera switch respected",
+      "acceptance": "normal browser operation pending"
+    }
+  },
+  "operations": [
+    {
+      "id": "power",
+      "label": "電源",
+      "part": "control.power",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "LED/照明/観察像の点灯状態",
+      "source": "M8",
+      "test": "T_power"
+    },
+    {
+      "id": "brightness",
+      "label": "照明強度",
+      "part": "control.brightness",
+      "priority": "P1",
+      "gate": "G1",
+      "effect": "相対照度と像の明るさ",
+      "source": "M16",
+      "test": "T_brightness"
+    },
+    {
+      "id": "turret",
+      "label": "対物レボルバー",
+      "part": "joint.turret",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "六穴対物の選択→倍率/FOV/PSF/光路",
+      "source": "M47;C83",
+      "test": "T_turret"
+    },
+    {
+      "id": "objectiveDetach",
+      "label": "対物を外す",
+      "part": "objective.active",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "装着状態を外し当該穴の結像を停止",
+      "source": "M38",
+      "test": "T_objectiveDetach"
+    },
+    {
+      "id": "objectiveAttach",
+      "label": "対物を戻す",
+      "part": "objective.active",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "元の穴の装着/結像を復元",
+      "source": "M38",
+      "test": "T_objectiveAttach"
+    },
+    {
+      "id": "eyepieceDetach",
+      "label": "接眼を外す",
+      "part": "eyepiece.left/right",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "当該眼の接眼像を止めるが中間像は残る",
+      "source": "M36/37",
+      "test": "T_eyepieceDetach"
+    },
+    {
+      "id": "eyepieceAttach",
+      "label": "接眼を戻す",
+      "part": "eyepiece.left/right",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "袖の停止位置と当該眼の観察を復元",
+      "source": "M37",
+      "test": "T_eyepieceAttach"
+    },
+    {
+      "id": "stageX",
+      "label": "ステージX",
+      "part": "control.stage_x",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "同じ標本のX移動→像u方向は反転",
+      "source": "M48",
+      "test": "T_stageX"
+    },
+    {
+      "id": "stageY",
+      "label": "ステージY",
+      "part": "control.stage_y",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "同じ標本のY移動→像v方向は反転",
+      "source": "M48",
+      "test": "T_stageY"
+    },
+    {
+      "id": "coarse",
+      "label": "粗動",
+      "part": "control.coarse",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "17.8mm/回転のZ→深さ付き像の焦点",
+      "source": "M19/47",
+      "test": "T_coarse"
+    },
+    {
+      "id": "fine",
+      "label": "微動",
+      "part": "control.fine",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "0.1mm/回転のZ→深さ付き像の焦点",
+      "source": "M19/47",
+      "test": "T_fine"
+    },
+    {
+      "id": "focusLimit",
+      "label": "粗動上限",
+      "part": "control.focus_limit",
+      "priority": "P1",
+      "gate": "G1",
+      "effect": "設定した上限で上方向を機械停止",
+      "source": "M19",
+      "test": "T_focusLimit"
+    },
+    {
+      "id": "specimen",
+      "label": "標本装填/回収",
+      "part": "specimen.slide",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "一意のslide所在/生物形状の有無",
+      "source": "M22",
+      "test": "T_specimen"
+    },
+    {
+      "id": "aperture",
+      "label": "開口絞り",
+      "part": "control.aperture",
+      "priority": "P1",
+      "gate": "G1",
+      "effect": "照明円錐/相対光量の模式的変化",
+      "source": "M28/49",
+      "test": "T_aperture"
+    },
+    {
+      "id": "field",
+      "label": "視野絞り",
+      "part": "control.field",
+      "priority": "P1",
+      "gate": "G1",
+      "effect": "照明領域を変え、絞り外は照らさない",
+      "source": "M11",
+      "test": "T_field"
+    },
+    {
+      "id": "tubeSelector",
+      "label": "三眼光路切替",
+      "part": "control.tube_selector",
+      "priority": "P1",
+      "gate": "G1",
+      "effect": "接眼/カメラ100/0→20/80→0/100",
+      "source": "M27;C76",
+      "test": "T_tubeSelector"
+    },
+    {
+      "id": "interpupillary",
+      "label": "眼幅",
+      "part": "body.tube.spacing_hinge",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "50〜76mmの接眼間隔",
+      "source": "M47;C76",
+      "test": "tests/g2_ergonomics.test.ts",
+      "implementation": "r39 implemented; runtime acceptance pending",
+      "directParts": [
+        "body.tube.binocular_lobe.-1",
+        "body.tube.binocular_lobe.1",
+        "body.tube.spacing_hinge"
+      ]
+    },
+    {
+      "id": "diopter",
+      "label": "視度",
+      "part": "eyepiece.left.shape.2",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "-8〜+5D、左右眼の焦準",
+      "source": "C82",
+      "test": "tests/g2_ergonomics.test.ts",
+      "parts": [
+        "eyepiece.left.shape.2",
+        "eyepiece.right.shape.2"
+      ],
+      "runtime_actions": [
+        "diopterLeft",
+        "diopterRight"
+      ],
+      "implementation": "r39 implemented; runtime acceptance pending"
+    },
+    {
+      "id": "eyecup",
+      "label": "アイシェード",
+      "part": "eyepiece.left.shape.4",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "折畳み/立上げ、外光遮蔽",
+      "source": "M27",
+      "test": "tests/g2_ergonomics.test.ts",
+      "parts": [
+        "eyepiece.left.shape.4",
+        "eyepiece.right.shape.4"
+      ],
+      "runtime_actions": [
+        "eyecupLeft",
+        "eyecupRight"
+      ],
+      "implementation": "r39 implemented; runtime acceptance pending"
+    },
+    {
+      "id": "tension",
+      "label": "粗動トルク",
+      "part": "control.tension",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "抵抗を変え、焦点を直接変えない",
+      "source": "M19",
+      "test": "T_tension"
+    },
+    {
+      "id": "fineKnobMount",
+      "label": "微動ノブの側付替え",
+      "part": "control.fine",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "公開微動ノブを左右付替え",
+      "source": "M19",
+      "test": "T_fineKnobMount"
+    },
+    {
+      "id": "condenserHeight",
+      "label": "コンデンサ上下",
+      "part": "condenser",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "視野絞り像の焦準",
+      "source": "M11",
+      "test": "T_condenserHeight"
+    },
+    {
+      "id": "condenserCenter",
+      "label": "コンデンサ芯出し",
+      "part": "control.condenser_center",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "ケーラー照明の中心合わせ",
+      "source": "M11",
+      "test": "T_condenserCenter",
+      "directParts": [
+        "control.condenser_center_x",
+        "control.condenser_center_y"
+      ],
+      "runtime_actions": [
+        "condenserX",
+        "condenserY"
+      ],
+      "implementation": "r43 existing screw geometry connected to direct3D input; normal browser validation pending"
+    },
+    {
+      "id": "holderLever",
+      "label": "保持レバー",
+      "part": "control.holder",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "右開き厚型の保持状態",
+      "source": "M22",
+      "test": "T_holderLever"
+    },
+    {
+      "id": "holderMount",
+      "label": "保持具の着脱",
+      "part": "joint.holder_mount",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "非分解の固定ねじ/溝",
+      "source": "M58",
+      "test": "T_holderMount"
+    },
+    {
+      "id": "correctionRing",
+      "label": "40X補正環",
+      "part": "control.correction_ring",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "0.11〜0.23mmカバーガラス条件の収差近似",
+      "source": "C31",
+      "test": "T_correctionRing"
+    },
+    {
+      "id": "preset",
+      "label": "PRESET",
+      "part": "control.preset",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "ノブとは独立したLED保存値",
+      "source": "M16",
+      "test": "T_preset"
+    },
+    {
+      "id": "lampMount",
+      "label": "LEDハウス着脱",
+      "part": "joint.lamp_mount",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "電源条件/固定ねじ/コネクタ",
+      "source": "M62",
+      "test": "T_lampMount"
+    },
+    {
+      "id": "condenserMount",
+      "label": "コンデンサ着脱",
+      "part": "joint.condenser_optics",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "公開固定部の取り付け",
+      "source": "M assembly",
+      "test": "T_condenserMount"
+    },
+    {
+      "id": "cleaning",
+      "label": "光学面の非分解清掃",
+      "part": "optical.surface",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "適切な対象/清掃条件、内部分解を除く",
+      "source": "M precautions",
+      "test": "T_cleaning"
+    },
+    {
+      "id": "turretClamp",
+      "label": "レボルバー固定ねじ",
+      "part": "control.turret_clamp",
+      "priority": "P1",
+      "gate": "G1",
+      "effect": "クランプの締結/解放。未解放で取り外せない",
+      "source": "M38/39",
+      "test": "T_turretClamp"
+    },
+    {
+      "id": "turretMount",
+      "label": "レボルバー着脱/机上配置",
+      "part": "joint.turret_mount",
+      "priority": "P0",
+      "gate": "G1",
+      "effect": "十分に下げて前方へ引き出し、対物を上向きに机上配置。光路停止。再装着後は同じ装着状態へ",
+      "source": "M38/39",
+      "test": "T_turretMount"
+    },
+    {
+      "id": "stageRotation",
+      "label": "ステージ取付角度",
+      "part": "joint.stage_rotation",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "固定ねじを緩め、左操作stageは時計20度/反時計239度。別の360度回転stageとは区別",
+      "source": "M25",
+      "test": "T_stageRotation"
+    },
+    {
+      "id": "tubeMount",
+      "label": "鏡筒の非分解着脱",
+      "part": "joint.tube_mount",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "接眼を先に外して丸あり継ぎ/固定ねじ。レンズ内部を分解しない",
+      "source": "M60/61",
+      "test": "T_tubeMount"
+    },
+    {
+      "id": "presetAdjust",
+      "label": "PRESET専用調整ねじ",
+      "part": "control.preset_adjust",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "通常の光量つまみとは独立してPRESET光量を設定。PRESET中は通常つまみで光量不変。",
+      "source": "M printed16/PDF22",
+      "test": "T_presetAdjust",
+      "implementationStatus": "logic_auxiliary_and_3D_mesh_input_implemented; browser_UNVERIFIED"
+    },
+    {
+      "id": "tensionX",
+      "label": "Xノブ回転抵抗",
+      "part": "control.tension_x",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "抵抗を独立調整。抵抗と入力感度の対応は模式",
+      "source": "M24",
+      "test": "T_tensionX"
+    },
+    {
+      "id": "tensionY",
+      "label": "Yノブ回転抵抗",
+      "part": "control.tension_y",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "抵抗を独立調整。抵抗と入力感度の対応は模式",
+      "source": "M24",
+      "test": "T_tensionY"
+    },
+    {
+      "id": "slideBack",
+      "label": "後側スライド装填",
+      "part": "specimen.slide_back",
+      "priority": "P1",
+      "gate": "G2",
+      "effect": "前後2枚を独立着脱、後側中心26mmは寸法配置推定",
+      "source": "M22/23",
+      "test": "T_slideBack"
+    }
+  ],
+  "defaultConditions": "対物交換はステージを十分に下げ、クランプを緩めてレボルバーを前へ抜き、対物を上向きに机へ置いて交換する(M38/39)。レボルバーの装着/締結後に観察。4mm下げは仮の粗モデルの移動余裕として採用した教材目標で、実機数値規定ではない。着脱動作中の二重開始拒否。",
+  "configurationExclusions": [
+    "U-TR30-2は固定30度。別鏡筒の傾斜調整を混ぜない",
+    "U-AC2には別U-SC3の上玉swingoutを付けない",
+    "乾式対物のみ、LBA追加filterは現在構成なし",
+    "非コードU-D6REではLIM不可。LEDとmotorized/coded nosepiece併用時だけ利用可能(M17)。選択対物は教材HUDで示し、実機に電子検出を捏造しない。"
+  ],
+  "serviceExclusions": [
+    "筐体内歯車/送り機構分解",
+    "レンズ処方/レンズ分解",
+    "サービス調整",
+    "電気/LED部品内部の分解"
+  ],
+  "learning": [
+    "倍率/視野/焦点/光路を同じ機械Stateから描く",
+    "装着を外すと当該穴または眼の観察は成立しない",
+    "焦点は同じ深さ付き標本内の焦点面を変える",
+    "XYを動かすと像が反転して移動",
+    "原理表示の切替は機械・標本を変更しない"
+  ],
+  "acceptance": {
+    "G1": "主要操作→姿勢→深さ付き像→光路と代表的不成立を実画面操作。保存復元、安定ID、Chrome/WebKitを検査してWAITING_G1停止",
+    "G2": "全operationsのP0/P1、全教材/外観/受入試験。G1残項目をP2へ下げない",
+    "independentExpectations": {
+      "total10X": 100,
+      "field10Xmm": 2.2,
+      "total20X": 200,
+      "field20Xmm": 1.1,
+      "rayleigh10Xum": 0.83875,
+      "focalDepth": "-stageShiftUm",
+      "missingObjective": "細胞像なし/結像光路は穴で中断",
+      "missingLeftEyepiece": "左眼像なし/中間像は残る",
+      "positiveStageX": "image coordinate u decreases"
+    }
+  },
+  "limits": [
+    "同構成の公式全体寸法未確定。別組立275x383x482mmを強制適用しない",
+    "筐体/取付/着脱経路は視覚推定。ねじピッチや全嵌合未検証",
+    "内部光学は理想無限遠系の模式表示、メーカー処方ではない",
+    "合成細胞/PSF/照度は教育近似。診断精度や実測強度ではない",
+    "全P1/非分解保守/収差・コヒーレンス/全姿勢干渉/性能はG2へ残す",
+    "G1候補を機器完成合格数へ算入しない"
+  ],
+  "redesignAudit": "redesign/G1_AUDIT.md",
+  "exterior_revision_evidence": {
+    "reference_priority": "Four user-provided photos, read and materialized 2026-10-15; see redesign/photo_rebuild/PHOTO_AUDIT.md",
+    "configuration": "Existing documented U-TR30-2 fixed30 retained; photo1 tilting head and photo2 absent observation tube are NOT adopted. Camera body and long photo adapter absent. Photo3 exact head type unreadable.",
+    "tube_width_mm": 175,
+    "tube_width_basis": "ComponentsGuide2023-10 PDF76 / printed9-2 U-TR30-2 plan-view outer body width; previous visual140mm superseded",
+    "estimated_geometry": [
+      "frame210mm width and rear panel extents",
+      "variable-width narrow illumination nose",
+      "stage perimeter corner/apron dimensions",
+      "external condenser focus/centering housings",
+      "fine/coarse external bearing supports"
+    ],
+    "not_asserted": [
+      "manufacturer CAD accuracy",
+      "unseen gears or full optical prescription",
+      "photo3 exact component identifiers",
+      "full G1 acceptance"
+    ],
+    "objective_layout_revision": "G1-0.2.1: inferred20/4/10/40 mounting order; initial20 for reference-like pose. Component dimensions unchanged. Old0.2.0 saved states reject by version.",
+    "upper_body_revision": "U-TR30-2 fixed30,175mm envelope and59.65mm interface retained. Main housing saddle and rear-frame loft are external shape estimates checked against C76/photo3; no camera body or tilt mechanism.",
+    "condenser_xy_revision": "G1-0.2.3: longer left XY grips and deeper U-AC2 exterior holder/height bodies from IFU55 and visible photos. C74 U-AC2-7 is family context only; exact U-AC2 dimensions unconfirmed. Top glass and ranges retained.",
+    "structure_revision": "G1-0.2.4: thin upper stage/stepped lower frame, condenser lower cylinder and fork support relation, base rear ledge and raised field-ring seat. Model design coordinates are visual estimates, not photo-measured millimetres. Cameras approximately fitted to manual landmarks and frozen from before; head excluded."
+  },
+  "exteriorRevision": {
+    "revision": "r47",
+    "status": "r36 body/head G1-approved; r44 holder and r47 screw scoped geometry verification, no new human acceptance",
+    "report": "redesign/input_r47/scope_before_after.json",
+    "scope": "Approved r36 body/head retained; r44 contact holder retained; r47 existing PRESET screw seated at unchanged rear surface",
+    "uncertainty": "IFU supports topology/opening; dimensions/colors visually estimated; no full contact or two-slide simulation claim",
+    "r47Delta": "r36 G1-approved body/head retained; r44 holder retained; only existing PRESET screw subtree translated 25.5 mm rearward to seat on unchanged outer surface. All mesh topology/materials unchanged; placement is an exterior teaching estimate."
+  },
+  "developmentRevision": "r47 input focus and selected-part keyboard arbitration; existing PRESET screw seated on unchanged rear exterior; empty-objective metrics not applicable; favicon included. r46 clock/diagnostics and r44 contact geometry unchanged.",
+  "runtimeAsset": {
+    "glb": "01_BX53F2_G2_r47.glb",
+    "manifest": "asset_manifest_r47.json",
+    "original817IDsPreserved": true
+  }
+}

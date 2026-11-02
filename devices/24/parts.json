@@ -1,0 +1,832 @@
+[
+  {
+    "id": "environment.bench",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.05000000074505806,
+      -0.02500000037252903
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "machine.base",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.02500000037252903
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "machine.body",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.28999999165534973
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tray.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.28999999165534973,
+      0.09000000357627869
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tray.floor",
+    "parent": "tray.root",
+    "positionBlenderM": [
+      0.0,
+      0.05999999865889549,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tray.front",
+    "parent": "tray.root",
+    "positionBlenderM": [
+      0.0,
+      -0.012000000104308128,
+      0.054999999701976776
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "nest.plate",
+    "parent": "tray.root",
+    "positionBlenderM": [
+      0.0,
+      0.054999999701976776,
+      0.009999999776482582
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "status.bar.0",
+    "parent": null,
+    "positionBlenderM": [
+      -0.2199999988079071,
+      -0.31299999356269836,
+      0.4449999928474426
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "status.bar.1",
+    "parent": null,
+    "positionBlenderM": [
+      -0.20000000298023224,
+      -0.31299999356269836,
+      0.4449999928474426
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "status.bar.2",
+    "parent": null,
+    "positionBlenderM": [
+      -0.18000000715255737,
+      -0.31299999356269836,
+      0.4449999928474426
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "status.bar.3",
+    "parent": null,
+    "positionBlenderM": [
+      -0.1599999964237213,
+      -0.31299999356269836,
+      0.4449999928474426
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.tray",
+    "parent": null,
+    "positionBlenderM": [
+      -0.2199999988079071,
+      -0.3140000104904175,
+      0.18000000715255737
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "power.switch",
+    "parent": null,
+    "positionBlenderM": [
+      -0.3050000071525574,
+      0.20000000298023224,
+      0.1599999964237213
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "power.inlet",
+    "parent": null,
+    "positionBlenderM": [
+      -0.3070000112056732,
+      0.20000000298023224,
+      0.10999999940395355
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "power.plug",
+    "parent": null,
+    "positionBlenderM": [
+      -0.47999998927116394,
+      0.23000000417232513,
+      0.02500000037252903
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "teaching.optics",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.3499999940395355
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "teaching.pressure",
+    "parent": null,
+    "positionBlenderM": [
+      0.17000000178813934,
+      0.10000000149011612,
+      0.30000001192092896
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.root",
+    "parent": null,
+    "positionBlenderM": [
+      -0.4300000071525574,
+      -0.20000000298023224,
+      0.029999999329447746
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.frame",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.A1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.A1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.03799999877810478,
+      0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.B1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.B1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.03799999877810478,
+      0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.C1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      -0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.C1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.03799999877810478,
+      -0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.D1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      -0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.D1",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.03799999877810478,
+      -0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.A2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.A2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.008999999612569809,
+      0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.B2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.B2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.008999999612569809,
+      0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.C2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      -0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.C2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.008999999612569809,
+      -0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.D2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      -0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.D2",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.008999999612569809,
+      -0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.A3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.00800000037997961,
+      0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.A3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.019999999552965164,
+      0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.B3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.00800000037997961,
+      0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.B3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.019999999552965164,
+      0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.C3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.00800000037997961,
+      -0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.C3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.019999999552965164,
+      -0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.D3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.00800000037997961,
+      -0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.D3",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.019999999552965164,
+      -0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.A4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.03700000047683716,
+      0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.A4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.04899999871850014,
+      0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.B4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.03700000047683716,
+      0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.B4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.04899999871850014,
+      0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.C4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.03700000047683716,
+      -0.009499999694526196,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.C4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.04899999871850014,
+      -0.009499999694526196,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.port.D4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.03700000047683716,
+      -0.02850000001490116,
+      0.007000000216066837
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.array.D4",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.04899999871850014,
+      -0.02850000001490116,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.root.0",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.strip.0",
+    "parent": "gasket.root.0",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      0.0,
+      0.017000000923871994
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.0.0",
+    "parent": "gasket.root.0",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.0.1",
+    "parent": "gasket.root.0",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.0.2",
+    "parent": "gasket.root.0",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      -0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.0.3",
+    "parent": "gasket.root.0",
+    "positionBlenderM": [
+      -0.05000000074505806,
+      -0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.root.1",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.strip.1",
+    "parent": "gasket.root.1",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      0.0,
+      0.017000000923871994
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.1.0",
+    "parent": "gasket.root.1",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.1.1",
+    "parent": "gasket.root.1",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.1.2",
+    "parent": "gasket.root.1",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      -0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.1.3",
+    "parent": "gasket.root.1",
+    "positionBlenderM": [
+      -0.020999999716877937,
+      -0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.root.2",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.strip.2",
+    "parent": "gasket.root.2",
+    "positionBlenderM": [
+      0.00800000037997961,
+      0.0,
+      0.017000000923871994
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.2.0",
+    "parent": "gasket.root.2",
+    "positionBlenderM": [
+      0.00800000037997961,
+      0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.2.1",
+    "parent": "gasket.root.2",
+    "positionBlenderM": [
+      0.00800000037997961,
+      0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.2.2",
+    "parent": "gasket.root.2",
+    "positionBlenderM": [
+      0.00800000037997961,
+      -0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.2.3",
+    "parent": "gasket.root.2",
+    "positionBlenderM": [
+      0.00800000037997961,
+      -0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.root.3",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.strip.3",
+    "parent": "gasket.root.3",
+    "positionBlenderM": [
+      0.03700000047683716,
+      0.0,
+      0.017000000923871994
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.3.0",
+    "parent": "gasket.root.3",
+    "positionBlenderM": [
+      0.03700000047683716,
+      0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.3.1",
+    "parent": "gasket.root.3",
+    "positionBlenderM": [
+      0.03700000047683716,
+      0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.3.2",
+    "parent": "gasket.root.3",
+    "positionBlenderM": [
+      0.03700000047683716,
+      -0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.3.3",
+    "parent": "gasket.root.3",
+    "positionBlenderM": [
+      0.03700000047683716,
+      -0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.root.4",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.strip.4",
+    "parent": "gasket.root.4",
+    "positionBlenderM": [
+      0.061000000685453415,
+      0.0,
+      0.017000000923871994
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.4.0",
+    "parent": "gasket.root.4",
+    "positionBlenderM": [
+      0.061000000685453415,
+      0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.4.1",
+    "parent": "gasket.root.4",
+    "positionBlenderM": [
+      0.061000000685453415,
+      0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.4.2",
+    "parent": "gasket.root.4",
+    "positionBlenderM": [
+      0.061000000685453415,
+      -0.009499999694526196,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "gasket.cap.4.3",
+    "parent": "gasket.root.4",
+    "positionBlenderM": [
+      0.061000000685453415,
+      -0.02850000001490116,
+      0.01899999938905239
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.A1marker",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      -0.05999999865889549,
+      0.03700000047683716,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "plate.barcode",
+    "parent": "plate.root",
+    "positionBlenderM": [
+      0.0,
+      -0.03999999910593033,
+      0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  }
+]

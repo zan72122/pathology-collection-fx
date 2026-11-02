@@ -1,0 +1,1 @@
+export{t as OpenPBRMaterialLoadingAdapter}from"./openpbrMaterialLoadingAdapter-DxaOonr4.js";

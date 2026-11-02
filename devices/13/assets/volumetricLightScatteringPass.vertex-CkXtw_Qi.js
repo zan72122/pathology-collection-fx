@@ -1,0 +1,1 @@
+export{t as volumetricLightScatteringPassVertexShaderWGSL}from"./volumetricLightScatteringPass.vertex-Bd3ZxmSU.js";

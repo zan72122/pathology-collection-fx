@@ -1,0 +1,1 @@
+export{t as openpbrVertexShaderWGSL}from"./openpbr.vertex-Bd_dzSS_.js";

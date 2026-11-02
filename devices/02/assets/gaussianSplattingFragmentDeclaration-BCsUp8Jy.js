@@ -1,0 +1,1 @@
+export{t as gaussianSplattingFragmentDeclarationWGSL}from"./gaussianSplattingFragmentDeclaration-C-FAEfrX.js";

@@ -1,0 +1,1 @@
+export{t as lightProxyVertexShaderWGSL}from"./lightProxy.vertex-CezB992Q.js";

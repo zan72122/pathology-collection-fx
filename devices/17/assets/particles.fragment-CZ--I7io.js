@@ -1,0 +1,1 @@
+export{t as particlesPixelShaderWGSL}from"./particles.fragment-XVNudbY5.js";

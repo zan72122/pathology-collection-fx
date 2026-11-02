@@ -1,0 +1,1 @@
+export{t as depthVertexShaderWGSL}from"./depth.vertex-B2nF5WvX.js";

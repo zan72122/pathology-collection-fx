@@ -1,0 +1,1059 @@
+{
+  "schemaVersion": 1,
+  "specVersion": "QS5-A28139-G1-0.2",
+  "deviceId": "03",
+  "identity": {
+    "manufacturer": "Applied Biosystems / Thermo Fisher Scientific",
+    "model": "QuantStudio 5 Real-Time PCR System",
+    "catalog": "A28139",
+    "generation": "QuantStudio 3/5 family, RUO; not QuantStudio 5 Dx",
+    "block": "96-well 0.2 mL fixed (non-interchangeable) VeriFlex",
+    "firmwareReference": "1.6",
+    "manualRevision": "MAN0010407 Rev G, 2025-10-02",
+    "options": {
+      "externalComputer": false,
+      "barcodeScanner": false,
+      "wifiAdapter": false,
+      "cloudConnection": false
+    },
+    "selectionReason": "Official configuration, operating/drawer/plate diagrams, dimensions and matching chemistry can be traced. No previous human selection of this model was found; selected under overnight autonomy.",
+    "shortLabel": "QuantStudio 5",
+    "configurationLabelJa": "96ウェル・0.2 mL"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0010407_QuantStudio3_5_InstallUseMaint_UG.pdf",
+      "title": "QuantStudio 3/5 Installation, Use, and Maintenance",
+      "revision": "G",
+      "date": "2025-10-02",
+      "local": "references/MAN0010407_QuantStudio3_5_InstallUseMaint_UG.pdf",
+      "visualPagesInspected": [
+        17,
+        24,
+        42,
+        82,
+        103,
+        116,
+        123
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://assets.thermofisher.com/TFS-Assets/GSD/Reference-Materials/quantstudio-3-5-specification-sheet.pdf",
+      "title": "QuantStudio 3 and 5 specification sheet",
+      "revision": "COL23816 1219",
+      "local": "references/quantstudio-3-5-specification-sheet.pdf"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.thermofisher.com/order/catalog/product/A28139",
+      "title": "A28139 product page",
+      "image": "https://www.thermofisher.com/TFS-Assets/LSG/product-images/QuantStudio-5-right-650x635.jpg-650.jpg",
+      "localImage": "references/QuantStudio-5-right-650x635.jpg",
+      "imageInspected": true
+    },
+    {
+      "id": "S4",
+      "url": "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/MAN0013511_PowerUp_mastermix_UG.pdf",
+      "title": "PowerUp SYBR Green Master Mix User Guide",
+      "revision": "G",
+      "date": "2026-03-09",
+      "local": "references/MAN0013511_PowerUp_mastermix_UG.pdf",
+      "visualPagesInspected": [
+        11,
+        12,
+        19,
+        21
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://academic.oup.com/clinchem/article/71/6/634/8119148",
+      "title": "MIQE 2.0",
+      "role": "qPCR interpretation and reporting limits; supporting reference from read-only scientific review"
+    },
+    {
+      "id": "S6",
+      "title": "QuantStudio 5 A28139 official FAQ",
+      "url": "https://www.thermofisher.com/order/catalog/product/A28139/faqs",
+      "locator": "How do I open the drawer on my QuantStudio 3 or QuantStudio 5 Real-Time PCR System?",
+      "checkedDate": "2026-10-19",
+      "finding": "Touch eject opens/closes drawer; do not push or pull drawer."
+    }
+  ],
+  "checkedDate": "2026-10-19",
+  "geometry": {
+    "units": "m",
+    "blenderAxes": {
+      "right": "+X",
+      "front": "-Y",
+      "up": "+Z"
+    },
+    "webAxes": {
+      "right": "+X",
+      "front": "+Z",
+      "up": "+Y"
+    },
+    "webHandedness": "right-handed before GLB import",
+    "origin": "bench contact, centre of nominal closed instrument footprint",
+    "closedEnvelope": {
+      "value": {
+        "width": 0.27,
+        "depth": 0.5,
+        "height": 0.4
+      },
+      "classification": "confirmed",
+      "source": "S1/S2",
+      "locator": "S1 p116; S2 p1",
+      "note": "Nominal published rounded dimensions; manufacturing tolerance and exact protrusion definition unknown."
+    },
+    "clearance": {
+      "value": {
+        "top": 0.3,
+        "front": 0.3,
+        "left": 0.15,
+        "right": 0.15,
+        "rear": 0.15
+      },
+      "classification": "confirmed",
+      "source": "S1",
+      "locator": "p117",
+      "note": "Keep outlet reachable; back must remain accessible. Co-located computer optional."
+    },
+    "mandatoryFeatures": [
+      "rounded off-white narrow tall chassis",
+      "sloped dark touchscreen surround with blue rim",
+      "front USB port",
+      "front lower drawer and horizontal seam",
+      "four support feet",
+      "rear vent pattern",
+      "rear USB/network/service/power connection group"
+    ],
+    "unconfirmed": {
+      "screenTiltDegrees": null,
+      "drawerTravelMetres": null,
+      "heatedCoverTravelMetres": null,
+      "internalOpticalGeometry": null,
+      "blockDrawerCoupling": null,
+      "bodyCornerRadii": null,
+      "individualPartDimensions": null
+    },
+    "representationRules": [
+      "Only whole-body nominal envelope is dimensioned as manufacturer confirmed.",
+      "Local shape proportions are estimated from official photo/diagrams and marked as such.",
+      "No hinged top user lid: routine access is front drawer.",
+      "Fixed block means non-interchangeable, not proof that a thermal block stays stationary during drawer motion.",
+      "Optical internals will be a labelled causal schematic unless stronger source evidence is found."
+    ],
+    "measuredModelEnvelope": {
+      "axes": "Blender XYZ: width/depth/height",
+      "min": [
+        -0.13568007946014404,
+        -0.2508000135421753,
+        0.0
+      ],
+      "max": [
+        0.13567999005317688,
+        0.2514999806880951,
+        0.4006800949573517
+      ],
+      "size": [
+        0.2713600695133209,
+        0.5022999942302704,
+        0.4006800949573517
+      ],
+      "note": "Approximate educational geometry, not manufacturer tolerance conformance"
+    },
+    "refinementNotes": [
+      "Drawer front stays at Y=-0.250m; return depth revised from 4mm to30mm to join the lower enclosure; this depth is estimated construction, not manufacturer measurement.",
+      "Central lower fascia line represented as shallow exterior detail from S1 p17 and S3 photograph; function/depth unknown."
+    ]
+  },
+  "environment": {
+    "bench": {
+      "value": {
+        "width": 1.4,
+        "depth": 1.2,
+        "height": 0.78
+      },
+      "classification": "estimated",
+      "basis": "educational layout",
+      "note": "Bench is not supplied by instrument manufacturer."
+    },
+    "wallPositionBlenderY": 0.66,
+    "instrumentAmbientC": 22,
+    "floor": "neutral laboratory floor",
+    "scenes": [
+      "laboratory bench",
+      "neutral studio"
+    ],
+    "clearanceOverlay": "published minimum spaces; does not represent collision-certified installation",
+    "wallCutawayRule": "Wall hidden when camera is behind inner wall plane; educational viewer visibility only, instrument untouched"
+  },
+  "configuration": {
+    "plate": {
+      "name": "MicroAmp Optical 96-Well Reaction Plate with Barcode",
+      "catalog": "4306737",
+      "classification": "confirmed",
+      "source": "S1 p111",
+      "reason": "Barcode version chosen to match front-facing barcode orientation requirement; no scanner fitted."
+    },
+    "film": {
+      "name": "MicroAmp Optical Adhesive Film",
+      "catalog": "4311971",
+      "classification": "confirmed",
+      "source": "S1 p114"
+    },
+    "adapter": {
+      "name": "black plate adapter",
+      "required": true,
+      "source": "S1 p42",
+      "removalNormalOperation": false
+    },
+    "compressionPad": {
+      "selected": null,
+      "status": "unresolved before operation implementation",
+      "source": "S1 pp41-43",
+      "reason": "Required for some 0.2mL applications; do not infer optionality for selected plate/chemistry."
+    },
+    "chemistry": {
+      "name": "PowerUp SYBR Green Master Mix",
+      "catalog": "A25742",
+      "source": "S4 pp5-6",
+      "reactionMicrolitres": 20,
+      "template": "synthetic dT-containing teaching DNA; no patient data or real sequence",
+      "primerAssumption": "matched synthetic primers with Tm >=60 C; not a validated assay",
+      "reporter": "SYBR",
+      "quencher": null,
+      "passiveReference": "ROX",
+      "mode": "standard"
+    },
+    "thermal": {
+      "method": {
+        "value": "Peltier",
+        "classification": "confirmed",
+        "source": "S2",
+        "locator": "p2",
+        "note": ""
+      },
+      "zones": {
+        "value": 6,
+        "classification": "confirmed",
+        "source": "S1",
+        "locator": "p16, 96-well only",
+        "note": ""
+      },
+      "maxBlockRampCPerSec": {
+        "value": 6.5,
+        "classification": "confirmed",
+        "source": "S2",
+        "locator": "p1, 0.2mL",
+        "note": ""
+      },
+      "averageSampleRampCPerSec": {
+        "value": 3.66,
+        "classification": "confirmed",
+        "source": "S2",
+        "locator": "p1, 0.2mL",
+        "note": ""
+      },
+      "modelRampCPerSec": {
+        "value": 1.6,
+        "classification": "educational parameter",
+        "note": "Provisional lesson ramp; not claimed to equal actual instrument ramp or thermal lag."
+      }
+    },
+    "optics": {
+      "source": {
+        "value": "bright white LED",
+        "classification": "confirmed",
+        "source": "S2",
+        "locator": "p2",
+        "note": ""
+      },
+      "acquisition": {
+        "value": "whole-plate imaging",
+        "classification": "confirmed",
+        "source": "S2",
+        "locator": "p2",
+        "note": ""
+      },
+      "channels": {
+        "value": "6 decoupled channels, up to 21 filter combinations",
+        "classification": "confirmed",
+        "source": "S2/S3",
+        "locator": "S2 p2; A28139 product page",
+        "note": ""
+      },
+      "sybrFiltersNm": {
+        "value": {
+          "excitationCentre": 470,
+          "excitationHalfWidth": 15,
+          "emissionCentre": 520,
+          "emissionHalfWidth": 15
+        },
+        "classification": "confirmed",
+        "source": "S1",
+        "locator": "p14",
+        "note": ""
+      },
+      "detectorConstruction": null
+    }
+  },
+  "parts": [
+    {
+      "id": "qs5.body",
+      "parent": null,
+      "role": "fixed outer shell",
+      "motion": null
+    },
+    {
+      "id": "qs5.screen",
+      "parent": "qs5.body",
+      "role": "touchscreen",
+      "motion": null
+    },
+    {
+      "id": "qs5.drawer",
+      "parent": "qs5.body",
+      "role": "front sample drawer",
+      "motion": {
+        "kind": "translation",
+        "axisBlender": [
+          0,
+          -1,
+          0
+        ],
+        "min": 0,
+        "max": null,
+        "source": "S1 pp41-43"
+      }
+    },
+    {
+      "id": "qs5.adapter",
+      "parent": "qs5.drawer",
+      "role": "black adapter",
+      "motion": "carried with drawer; no routine removal"
+    },
+    {
+      "id": "qs5.plate",
+      "parent": "state-dependent drawer or preparation area",
+      "role": "single uniquely identified 96-well plate",
+      "motion": "load/unload only at open drawer; orientation A1 rear-left/barcode front"
+    },
+    {
+      "id": "qs5.film",
+      "parent": "qs5.plate",
+      "role": "optical seal",
+      "motion": "preparation/removal outside run"
+    },
+    {
+      "id": "qs5.heated-cover",
+      "parent": "qs5.body",
+      "role": "internal heated cover presses reaction consumables",
+      "motion": {
+        "kind": "unknown",
+        "range": null,
+        "source": "S1 p42"
+      }
+    },
+    {
+      "id": "qs5.power-switch",
+      "parent": "qs5.body",
+      "role": "rear rocker",
+      "motion": "bounded rocker, angle estimated from diagram"
+    },
+    {
+      "id": "qs5.power-cord",
+      "parent": "state-dependent",
+      "role": "mains connection",
+      "motion": "detachable only in appropriate power/maintenance state"
+    },
+    {
+      "id": "qs5.fuse-holder",
+      "parent": "qs5.body",
+      "role": "rear removable fuse carrier",
+      "motion": "removable for specified non-cover maintenance; exact travel unknown"
+    },
+    {
+      "id": "qs5.fuse-1",
+      "parent": "qs5.fuse-holder",
+      "role": "10A time-lag 250VAC 5x20mm fuse",
+      "motion": "removable"
+    },
+    {
+      "id": "qs5.fuse-2",
+      "parent": "qs5.fuse-holder",
+      "role": "10A time-lag 250VAC 5x20mm fuse",
+      "motion": "removable"
+    },
+    {
+      "id": "qs5.usb-storage",
+      "parent": "state-dependent",
+      "role": "optional removable storage for local file transfer",
+      "motion": "insertion/removal, not included in external networking"
+    }
+  ],
+  "protocol": {
+    "source": "S4 p11 table3; p12 table5",
+    "classification": "manufacturer thermal template with synthetic teaching samples",
+    "stages": [
+      {
+        "id": "udg",
+        "temperatureC": 50,
+        "holdSec": 120,
+        "cycles": 1,
+        "acquire": false
+      },
+      {
+        "id": "activation",
+        "temperatureC": 95,
+        "holdSec": 120,
+        "cycles": 1,
+        "acquire": false
+      },
+      {
+        "id": "amplification",
+        "cycles": 40,
+        "steps": [
+          {
+            "id": "denature",
+            "temperatureC": 95,
+            "holdSec": 15,
+            "acquire": false
+          },
+          {
+            "id": "anneal-extend",
+            "temperatureC": 60,
+            "holdSec": 60,
+            "acquire": true
+          }
+        ]
+      },
+      {
+        "id": "melt-preheat",
+        "temperatureC": 95,
+        "holdSec": 15,
+        "rampCPerSec": 1.6
+      },
+      {
+        "id": "melt-reanneal",
+        "temperatureC": 60,
+        "holdSec": 60,
+        "rampCPerSec": 1.6
+      },
+      {
+        "id": "melt-acquire",
+        "temperatureC": 95,
+        "holdSec": 15,
+        "rampCPerSec": 0.15,
+        "acquire": "continuous during ramp"
+      },
+      {
+        "id": "cool-for-handling",
+        "temperatureC": 22,
+        "holdSec": 0,
+        "classification": "educational safe handling hold, not part of reagent amplification table"
+      }
+    ]
+  },
+  "science": {
+    "classification": "uncalibrated educational synthetic model, not clinical measurement",
+    "oneStatePerWell": [
+      "wellId",
+      "sampleId",
+      "initialTargetEquivalent",
+      "targetDsDna",
+      "nonspecificDsDna",
+      "polymeraseAvailable",
+      "dNtpAvailable",
+      "forwardPrimer",
+      "reversePrimer",
+      "dyeAvailable",
+      "roxAvailable",
+      "temperature",
+      "stage",
+      "cycle",
+      "measurements"
+    ],
+    "rules": [
+      "DNA amount changes during valid extension, never just because a temperature label changes.",
+      "Ideal exponential oracle N(c)=N0*(1+E)^c applies only before saturation, with all requirements met.",
+      "Normal lesson efficiency and plateau are model parameters, not predictions for the real assay.",
+      "No polymerase or no dNTP prevents new complete target amplicon. Dye absence preserves possible amplification but removes amplification-dependent reporter signal.",
+      "A missing acquisition yields null, not zero. Raw SYBR and ROX signals are saved before normalization.",
+      "Baseline/threshold are analysis state; changing them cannot mutate DNA or acquired raw signals.",
+      "Cq is first valid threshold intersection; no crossing is null. Invalid threshold location is flagged.",
+      "Clean synthetic NTC has no target; contaminated or primer-dimer scenarios may fluoresce. SYBR reports total dsDNA, not sequence identity.",
+      "Melt decrease derives from dsDNA fraction vs temperature. One peak does not prove target identity.",
+      "UDG acts on uracil-containing carryover DNA; it does not destroy all contamination or native dT DNA.",
+      "Counterfactual removal of premix components is labelled a teaching experiment.",
+      "ROX absence makes reference normalization unavailable, not PCR inhibition; preserve raw signal."
+    ],
+    "referenceOracle": {
+      "conditions": "ideal E=1, gain=1, no baseline/noise/saturation, threshold=2^20",
+      "inputs": [
+        1,
+        8,
+        64
+      ],
+      "expectedCq": [
+        20,
+        17,
+        14
+      ]
+    },
+    "limits": [
+      "No real patient/specimen values",
+      "No absolute Cq diagnostic cutoff",
+      "No claim of validated kinetics, limit of detection or thermal uniformity",
+      "No cross-platform absolute Cq equivalence",
+      "No physical layout of unseen optics asserted"
+    ],
+    "measurementIdentity": [
+      "measurementId",
+      "wellId",
+      "sampleId",
+      "stage",
+      "simulationTime",
+      "temperature",
+      "activeMethodRevision",
+      "cycle only for amplification points"
+    ],
+    "pauseApproximation": "Teaching proposal: thermal/dsDNA melt fraction follow model temperature; scheduled amplification and normal acquisition are suspended with saved resume cursor. Real reagent kinetics during instrument pause are not calibrated; paused runs are separate from uninterrupted ideal oracle."
+  },
+  "operationInventory": [
+    {
+      "id": "OP-power",
+      "priority": "P1",
+      "action": "Rear power on/off, touch wake, sleep",
+      "conditions": "cord connected and power state; powering off during run marks incomplete",
+      "source": "S1 pp24,83-84",
+      "testIds": [
+        "T-power"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-drawer",
+      "priority": "P0",
+      "action": "Touchscreen eject/close front drawer; do not manually push or pull fascia",
+      "conditions": "no competing motion; operational heat/run constraints must be confirmed, do not invent interlocks",
+      "source": "S1 pp41–43; S6 drawer FAQ",
+      "testIds": [
+        "T-drawer"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-plate-load",
+      "priority": "P0",
+      "action": "Load/unload one sealed plate with A1 rear-left, barcode front",
+      "conditions": "drawer open; no plate duplication; allow cooling before handling",
+      "source": "S1 p42",
+      "testIds": [
+        "T-plate-load"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-seal",
+      "priority": "P1",
+      "action": "Prepare and verify optical seal; selected pad decision required",
+      "conditions": "plate outside run; compatible consumables",
+      "source": "S1 pp41-43; S4 p10",
+      "testIds": [
+        "T-seal"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-plate-map",
+      "priority": "P1",
+      "action": "Assign sample/target/task to same 96 well coordinates",
+      "conditions": "before run; preserve IDs",
+      "source": "S1 pp40-41",
+      "testIds": [
+        "T-plate-map"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-method",
+      "priority": "P1",
+      "action": "Edit steps, holds, cycle count, volume, acquisition, ramp and six zones",
+      "conditions": "Initial method snapshot preserved; confirmed Pause→Edit cycle-count path creates active revision and history. Other run-time editing limits remain source-dependent.",
+      "source": "S1 pp37–40,46",
+      "testIds": [
+        "T-method"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-run",
+      "priority": "P0",
+      "action": "Start, advance all thermal/acquisition/melt stages, complete",
+      "conditions": "valid protocol and loading conditions",
+      "source": "S1 pp33-46; S4 pp11-12",
+      "testIds": [
+        "T-run"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-pause-stop",
+      "priority": "P0",
+      "action": "Instrument pause with selected temperature, resume or stop",
+      "conditions": "distinguish real pause/cooling from educational time pause",
+      "source": "S1 p46",
+      "testIds": [
+        "T-pause-stop"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-results",
+      "priority": "P0",
+      "action": "View raw/normalized fluorescence, amplification and melt curves, Cq",
+      "conditions": "data from same well and actual collected cycles only",
+      "source": "S1 pp46-48; S4 pp12,20-21",
+      "testIds": [
+        "T-results"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-save-restore",
+      "priority": "P0",
+      "action": "Save/reload complete educational checkpoint",
+      "conditions": "schema/configuration/seed/clock/history validated before replace",
+      "source": "canonical section6",
+      "testIds": [
+        "T-save-restore"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-file-transfer",
+      "priority": "P1",
+      "action": "Local run/template data export and import/USB illustration",
+      "conditions": "no real network or accounts",
+      "source": "S1 pp47-48",
+      "testIds": [
+        "T-file-transfer"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-calibration",
+      "priority": "P1",
+      "action": "Load calibration/verification plate; represent ROI/background/dye/RNaseP workflow",
+      "conditions": "educational status; not manufacture a real calibration certificate",
+      "source": "S1 pp50-75",
+      "testIds": [
+        "T-calibration"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-clean-block",
+      "priority": "P1",
+      "action": "Access sample block for non-cover maintenance and validate prerequisites",
+      "conditions": "manual p80 power-off/eject ordering appears ambiguous; unresolved before animation",
+      "source": "S1 pp79-82",
+      "testIds": [
+        "T-clean-block"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-fuse",
+      "priority": "P1",
+      "action": "Rear fuse carrier/fuse removal and replacement",
+      "conditions": "off/unplugged/cooled, specified fuse type; no cover removal",
+      "source": "S1 pp82-83",
+      "testIds": [
+        "T-fuse"
+      ],
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OP-inspect",
+      "priority": "P1",
+      "action": "Highlight, zoom, return, six views, transparency/explanation mode",
+      "conditions": "display state cannot alter machine state",
+      "source": "canonical section7",
+      "testIds": [
+        "T-inspect"
+      ],
+      "status": "PARTIALLY_IMPLEMENTED",
+      "stageEvidence": [
+        "reports/browser-summary.json",
+        "evidence/v04-direct-pick.png",
+        "evidence/v04-back-focus-final.png",
+        "evidence/v04-orbit-zoom-final.png"
+      ],
+      "remaining": "Direct parts and eight named main parts available for selection; actual touch devices, full keyboard camera controls and internal explanation not validated."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R-config",
+      "priority": "P0",
+      "description": "One locked QS5 A28139 identity and one plate/sample identity across every display",
+      "testIds": [
+        "T-config"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-dimensions",
+      "priority": "P1",
+      "description": "Closed exterior matches nominal 270x500x400 mm; unknown local dimensions labelled estimates",
+      "testIds": [
+        "T-envelope"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-recognition",
+      "priority": "P1",
+      "description": "Official front/top/rear diagrams and oblique photo compared with same model views",
+      "testIds": [
+        "T-visual-comparison"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-clearance",
+      "priority": "P1",
+      "description": "Environment respects published top/front/side/rear spaces",
+      "testIds": [
+        "T-environment"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-no-fake-lid",
+      "priority": "P0",
+      "description": "No top user hinge or unsupported carrier relocation",
+      "testIds": [
+        "T-mechanism"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-causality",
+      "priority": "P0",
+      "description": "Amplification, optical acquisition, curve and Cq come from same well state",
+      "testIds": [
+        "T-science"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-counterfactual",
+      "priority": "P0",
+      "description": "Initial quantity, NTC, missing synthesis ingredient and missing detection ingredient have distinct causal outcomes",
+      "testIds": [
+        "T-negative-controls"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-temperature",
+      "priority": "P0",
+      "description": "Holds start after modeled target reached; common simulation clock, independent of frame rate",
+      "testIds": [
+        "T-clock"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-storage",
+      "priority": "P0",
+      "description": "Transactional save/restore preserves complete checkpoint without silently discarding old save",
+      "testIds": [
+        "T-save-restore"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-normal-ui",
+      "priority": "P1",
+      "description": "Real 3D picks and normal UI complete supported operations",
+      "testIds": [
+        "T-browser"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-performance",
+      "priority": "P1",
+      "description": "Measure normal and heaviest view at standard speed; 30fps target remains explicit",
+      "testIds": [
+        "T-performance"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-build",
+      "priority": "P1",
+      "description": "Blend reopen, GLB unique IDs/axes/units, TS build and offline local loading",
+      "testIds": [
+        "T-build"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-restart",
+      "priority": "P1",
+      "description": "Reload, switch view, repeated state restore and resource disposal verified",
+      "testIds": [
+        "T-lifecycle"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-responsive",
+      "priority": "P1",
+      "description": "PC and touch-sized UI; WebKit basic flow separately from real Safari/mobile",
+      "testIds": [
+        "T-responsive"
+      ],
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R-labels",
+      "priority": "P0",
+      "description": "Synthetic/uncalibrated/mode distinctions visibly persist in screenshots and outputs",
+      "testIds": [
+        "T-claims"
+      ],
+      "status": "NOT_TESTED"
+    }
+  ],
+  "gateState": {
+    "g1Approved": false,
+    "g2Approved": false,
+    "implementationStage": "Step3 exterior refinement and operation design",
+    "acceptance": "WAITING_G1",
+    "candidateVersion": "QS5-G1-v0.4",
+    "candidateRound": 4,
+    "submissionRecordRevision": 1,
+    "submittedUTC": "2026-10-19T20:53:28.055664+00:00",
+    "gate": "G1",
+    "otherDevices": "ON_HOLD"
+  },
+  "outOfScopeDeclared": [
+    "Service removal of outer cover/internal repairs",
+    "Real network accounts, credentials, firmware updates or instrument control",
+    "Clinical interpretation",
+    "Multiplex biological assays or RNA reverse transcription; selected lesson uses synthetic DNA"
+  ],
+  "referenceRights": "Manufacturer PDFs/photos are local research references, not bundled textures or app artwork. App geometry and educational screen art will be original. Source URLs and comparisons are attributed.",
+  "stageVerification": {
+    "stage": "Step3 QS5-G1-v0.4 exterior and operation design; existing verification records reconciled",
+    "candidateVersion": "QS5-G1-v0.4",
+    "candidateRound": 4,
+    "result": "PASS_WITH_DOCUMENTED_LIMITS_FOR_STEP3_REVIEW",
+    "recordUpdatedUTC": "2026-10-19T20:53:28.055664+00:00",
+    "verificationRunUTC": "2026-10-19T20:44:03.988886+00:00",
+    "evidenceReuse": "Metadata and submission-state update only; existing v0.4 measurements and screenshots reused without re-execution",
+    "requirementsStatusScope": "requirements[].status remains the full Step6 acceptance state; the following verified subsets do not imply complete P0/P1 acceptance",
+    "evidence": [
+      "evidence/v04-back-focus-final.png",
+      "evidence/v04-back.png",
+      "evidence/v04-comparison-full.png",
+      "evidence/v04-direct-pick.png",
+      "evidence/v04-front.png",
+      "evidence/v04-left.png",
+      "evidence/v04-oblique.png",
+      "evidence/v04-operation-design.png",
+      "evidence/v04-operation-pause.png",
+      "evidence/v04-orbit-zoom-final.png",
+      "evidence/v04-packaged-design.png",
+      "evidence/v04-packaged-front.png",
+      "evidence/v04-right.png",
+      "evidence/v04-top.png",
+      "evidence/v04-width1024.png",
+      "evidence/v04-width390.png",
+      "reports/browser-summary.json",
+      "reports/build-exterior.json",
+      "reports/build-v04.log",
+      "reports/console-final.json",
+      "reports/design-consistency.json",
+      "reports/design-review.json",
+      "reports/geometry-review.json",
+      "reports/glb-integrity.json",
+      "reports/packaged-console.json",
+      "reports/packaged-snapshot.json",
+      "reports/perf-heavy-1.json",
+      "reports/perf-heavy-2.json",
+      "reports/perf-heavy-3.json",
+      "reports/perf-normal-1.json",
+      "reports/perf-normal-2.json",
+      "reports/perf-normal-3.json",
+      "reports/resources-after.json",
+      "reports/resources-before.json",
+      "reports/responsive-1024.json",
+      "reports/responsive-390.json",
+      "reports/source-reconciliation.json"
+    ],
+    "checks": [
+      {
+        "id": "V-exterior",
+        "requirementIds": [
+          "R-dimensions",
+          "R-recognition",
+          "R-no-fake-lid"
+        ],
+        "result": "VERIFIED_SUBSET",
+        "scope": "Closed exterior multi-view review and GLB units/axes/IDs/bounds only; no dimensional certification or moving mechanism verification",
+        "evidence": [
+          "reports/glb-integrity.json",
+          "reports/geometry-review.json",
+          "evidence/v04-front.png",
+          "evidence/v04-back.png",
+          "evidence/v04-left.png",
+          "evidence/v04-right.png",
+          "evidence/v04-top.png",
+          "evidence/v04-oblique.png",
+          "evidence/v04-comparison-full.png"
+        ]
+      },
+      {
+        "id": "V-inspect",
+        "requirementIds": [
+          "R-normal-ui"
+        ],
+        "result": "VERIFIED_SUBSET",
+        "scope": "Six views, direct screen pick, rotation/zoom/fit, eight-part selector and rear focus, display/environment controls only",
+        "evidence": [
+          "reports/browser-summary.json",
+          "evidence/v04-direct-pick.png",
+          "evidence/v04-back-focus-final.png",
+          "evidence/v04-orbit-zoom-final.png"
+        ]
+      },
+      {
+        "id": "V-performance",
+        "requirementIds": [
+          "R-performance",
+          "R-restart"
+        ],
+        "result": "VERIFIED_SUBSET",
+        "scope": "Three 10-second runs per normal/heavy exterior display; reload and 100 display inputs; resource counts stable. No runtime save/restore or operation/science test",
+        "evidence": [
+          "reports/browser-summary.json",
+          "reports/perf-normal-1.json",
+          "reports/perf-normal-2.json",
+          "reports/perf-normal-3.json",
+          "reports/perf-heavy-1.json",
+          "reports/perf-heavy-2.json",
+          "reports/perf-heavy-3.json",
+          "reports/resources-before.json",
+          "reports/resources-after.json",
+          "reports/console-final.json",
+          "reports/packaged-snapshot.json",
+          "reports/packaged-console.json"
+        ]
+      },
+      {
+        "id": "V-responsive",
+        "requirementIds": [
+          "R-responsive"
+        ],
+        "result": "VERIFIED_SUBSET",
+        "scope": "IAB viewport widths 390 and 1024: no horizontal overflow/caption overlap. Keyboard-only selection NOT_CONFIRMED; actual Safari/mobile/touch not tested",
+        "evidence": [
+          "reports/responsive-390.json",
+          "reports/responsive-1024.json",
+          "evidence/v04-width390.png",
+          "evidence/v04-width1024.png"
+        ]
+      },
+      {
+        "id": "V-build",
+        "requirementIds": [
+          "R-build"
+        ],
+        "result": "VERIFIED_SUBSET",
+        "scope": "Existing Blender save/reopen/export, TypeScript/Vite build and loopback packaged start verified. Existing Vite large-chunk and Blender deprecation warnings retained; no new build or browser run in this record-only submission update",
+        "evidence": [
+          "reports/build-exterior.json",
+          "reports/glb-integrity.json",
+          "reports/build-v04.log",
+          "reports/packaged-snapshot.json",
+          "reports/packaged-console.json",
+          "evidence/v04-packaged-front.png"
+        ]
+      },
+      {
+        "id": "V-design",
+        "requirementIds": [
+          "R-config",
+          "R-causality",
+          "R-counterfactual",
+          "R-temperature",
+          "R-storage",
+          "R-labels"
+        ],
+        "result": "DESIGN_REVIEW_ONLY",
+        "scope": "14-operation specification, invariant/expectation review and declared unknowns only; no operation/science/oracle/save-restore runtime executed",
+        "evidence": [
+          "reports/design-consistency.json",
+          "reports/design-review.json",
+          "reports/source-reconciliation.json",
+          "evidence/v04-operation-design.png",
+          "evidence/v04-operation-pause.png",
+          "evidence/v04-packaged-design.png"
+        ]
+      }
+    ],
+    "notAcceptance": [
+      "G1 not approved",
+      "G2 not approved",
+      "All 14 operation functions NOT_IMPLEMENTED and their runtime tests NOT_EXECUTED",
+      "Science/oracle/save-restore runtime not implemented or tested",
+      "Actual Safari/mobile/touch and keyboard-only selection not validated",
+      "Manufacturer dimensional tolerance conformance unknown"
+    ],
+    "openDecisions": [
+      {
+        "id": "U-pad",
+        "status": "OPEN",
+        "blockingScope": "selected consumable preparation",
+        "question": "4306737+4311971+PowerUp20µLでcompression pad必須か",
+        "sources": "S1 pp41–44,p112; S4 pp7,10–11",
+        "resolution": "用途別の明示的根拠が得られるまでunknown"
+      },
+      {
+        "id": "U-mechanism",
+        "status": "OPEN",
+        "blockingScope": "physical mechanism accuracy",
+        "question": "drawerストローク、cover駆動、block連動",
+        "sources": "S1 p42, S6 drawer FAQ",
+        "resolution": "carrier/adapter/plate関係は確認済み。未知の内部は模式図と区別"
+      },
+      {
+        "id": "U-run-access",
+        "status": "OPEN",
+        "blockingScope": "run access and stop realism",
+        "question": "run中eject可否とStop後温度・データ処理",
+        "sources": "S1 pp19,46",
+        "resolution": "Pause温度入力と冷却待ちは採用。未確定動作を実機規則としない"
+      },
+      {
+        "id": "U-clean",
+        "status": "OPEN_CONFLICT",
+        "blockingScope": "cleaning access sequence",
+        "question": "OFF/抜栓後touch ejectと手押しcloseの記載矛盾",
+        "sources": "S1 p80 vs S6 drawer FAQ",
+        "resolution": "推測で手順を並べ替えず、アクセス工程を確認待ち"
+      }
+    ]
+  },
+  "operationDesignFile": "OPERATION_DESIGN.json"
+}

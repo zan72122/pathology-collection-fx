@@ -1,0 +1,1 @@
+export{t as spritesVertexShader}from"./sprites.vertex-KBBQg7K_.js";

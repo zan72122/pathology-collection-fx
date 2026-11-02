@@ -1,0 +1,1 @@
+export{t as backgroundPixelShaderWGSL}from"./background.fragment-C6V0J6Wx.js";

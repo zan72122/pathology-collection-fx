@@ -1,0 +1,1 @@
+export{t as openpbrVertexShader}from"./openpbr.vertex-D2VdrbMa.js";

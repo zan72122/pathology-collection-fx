@@ -1,0 +1,36 @@
+{
+  "modelDeliveryName": "bond_prime_step45.glb",
+  "source": "maintenance-model/service-clearance-v3/models/bond_prime_maintenance_service_v3.glb",
+  "sourceStatus": "SCOPED_NEW_PATHS_PASS_WITH_UNRESOLVED_BASELINE_GEOMETRY",
+  "originalIntegrationSha256": "58a6e2dcfa942272752ed90b2388236b0d63729f38a2c030ea96dda401c70c6f",
+  "sha256": "63d9ffe30f7cfca5a2bf00d43a8a911ffadba376b15c97dcdf02a791f524c99e",
+  "bytes": 18008664,
+  "stableIds": 2795,
+  "changes": [
+    "局所保守の取り外し単位と固定shaft/holderの分離",
+    "同じplateに80well床を所属",
+    "Original A12教育構成の8 bulk、caddy/lid/releaseと明示支持具",
+    "pickup tube/filter assembly、局所清掃面、Kit、個体別支持具",
+    "教育用の取外し通路・接触面・筐体の省略形状",
+    "Cleaning Kit 3蓋の教育用中空口とhinge clearance補正",
+    "共有瓶の既存cap hingeを口高・外側へ補正し、上から外へ開く符号付き-270度教育経路を明示",
+    "DAB既存hingeの接続端を教育近似として改善、符号付き長回りは維持",
+    "旧Covertile24個体の可視外部ラックと装置外world連続廃棄経路を追加"
+  ],
+  "manufacturerGeometryClaim": false,
+  "g2Approved": false,
+  "targetedAudit": "maintenance-model/service-clearance-v3/reports/FINAL_VALIDATION.json",
+  "previousDerivative": {
+    "source": "integration-fixes/v2/models/bond_prime_step6_clearance_v2.glb",
+    "sha256": "01e445e37ff04cd4d22bf595611ef00e9c92c3e37ee9a5a4cd6a363968848f78"
+  },
+  "contractFile": "maintenance-scene-contract.json",
+  "contractSha256": "3e1ab61cade4dbdc12d0ad9f0f400638365116ad5534b331b24d835ac4898de1",
+  "targetedAuditScope": "Model-scoped discrete removals, supply/disposal routes, cap directed sweep, replacement coexistence, DAB/loaded-tray routes with visible external Covertile disposal rack retained. Does not establish all-actor continuous collision safety, browser operation or clinical accuracy. Final independent source-bound classification is recorded separately; raw baseline intersections are retained.",
+  "manualContractSha256": "d427c5ac8f6629171f8d21fd324adde8820b37d71a06fe2a4e256fcedcc89b86",
+  "capMotionScope": "Three DAB component closures use per-instance continuous progress. Five standard reagent closures use boolean closed/open endpoints only; continuous motion is not implemented or certified for those five.",
+  "runtimeBaseContractSha256": "6345fbdddcb82031100f30f9f57713584068f32fdd5f1b8ca1bb99ee5fc13e0c",
+  "metadataCorrection": "Only counts changed: actual GLB 2795 stable IDs; runtime-consumed fields are identical. See maintenance-model/service-clearance-v3/reports/counts-metadata-correction.json.",
+  "independentAudit": "motion-audit/v3/FINAL_REVIEW.json",
+  "independentAuditScope": "Final schema1.5 public-event replay; 9,164 maintenance poses, two single-slide branches, 283 DAB cap event poses and 546 dense cap poses. New external path intersections zero in this discrete scope. Existing U02, flexible-loop and gantry internal intersections remain; browser/GPU and all-actor continuous safety are not established."
+}

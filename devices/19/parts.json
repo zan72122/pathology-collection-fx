@@ -1,0 +1,302 @@
+[
+  {
+    "id": "environment.bench",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      -0.014999999664723873
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "machine.base",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.014999999664723873
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "machine.housing",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.08100000023841858
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.panel",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.08399999886751175,
+      0.08699999749660492
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.speed",
+    "parent": null,
+    "positionBlenderM": [
+      0.027000000700354576,
+      -0.09099999815225601,
+      0.06499999761581421
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.pointer",
+    "parent": null,
+    "positionBlenderM": [
+      0.027000000700354576,
+      -0.09799999743700027,
+      0.07500000298023224
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.mode",
+    "parent": null,
+    "positionBlenderM": [
+      -0.035999998450279236,
+      -0.09099999815225601,
+      0.054999999701976776
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.mode.plate",
+    "parent": null,
+    "positionBlenderM": [
+      -0.035999998450279236,
+      -0.08699999749660492,
+      0.054999999701976776
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "drive.shaft",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.1459999978542328
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "head.cup.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.15399999916553497
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "head.cup",
+    "parent": "head.cup.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.003000000026077032
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "head.platform.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.15000000596046448,
+      0.0,
+      0.023000000044703484
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "head.platform",
+    "parent": "head.platform.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "head.platform.rubber",
+    "parent": "head.platform.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.00800000037997961
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "foot.-0.047.-0.065",
+    "parent": null,
+    "positionBlenderM": [
+      -0.04699999839067459,
+      -0.06499999761581421,
+      0.004000000189989805
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "foot.-0.047.0.065",
+    "parent": null,
+    "positionBlenderM": [
+      -0.04699999839067459,
+      0.06499999761581421,
+      0.004000000189989805
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "foot.0.047.-0.065",
+    "parent": null,
+    "positionBlenderM": [
+      0.04699999839067459,
+      -0.06499999761581421,
+      0.004000000189989805
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "foot.0.047.0.065",
+    "parent": null,
+    "positionBlenderM": [
+      0.04699999839067459,
+      0.06499999761581421,
+      0.004000000189989805
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.SYN-19-A",
+    "parent": null,
+    "positionBlenderM": [
+      -0.1599999964237213,
+      -0.07000000029802322,
+      0.03200000151991844
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.body.SYN-19-A",
+    "parent": "tube.SYN-19-A",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.cap.SYN-19-A",
+    "parent": "tube.SYN-19-A",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.03400000184774399
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.lower.SYN-19-A",
+    "parent": "tube.SYN-19-A",
+    "positionBlenderM": [
+      0.0,
+      -0.00800000037997961,
+      -0.013000000268220901
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.upper.SYN-19-A",
+    "parent": "tube.SYN-19-A",
+    "positionBlenderM": [
+      0.0,
+      -0.00800000037997961,
+      0.010999999940395355
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.SYN-19-B",
+    "parent": null,
+    "positionBlenderM": [
+      -0.10499999672174454,
+      -0.07000000029802322,
+      0.03200000151991844
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.body.SYN-19-B",
+    "parent": "tube.SYN-19-B",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.cap.SYN-19-B",
+    "parent": "tube.SYN-19-B",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.03400000184774399
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.lower.SYN-19-B",
+    "parent": "tube.SYN-19-B",
+    "positionBlenderM": [
+      0.0,
+      -0.00800000037997961,
+      -0.013000000268220901
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.upper.SYN-19-B",
+    "parent": "tube.SYN-19-B",
+    "positionBlenderM": [
+      0.0,
+      -0.00800000037997961,
+      0.010999999940395355
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "teaching.handgrip",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.20000000298023224
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "power.plug",
+    "parent": null,
+    "positionBlenderM": [
+      0.11999999731779099,
+      0.11999999731779099,
+      0.012000000104308128
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  }
+]

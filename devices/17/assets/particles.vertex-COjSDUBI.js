@@ -1,0 +1,1 @@
+export{t as particlesVertexShaderWGSL}from"./particles.vertex-CeeHRcyt.js";

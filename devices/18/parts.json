@@ -1,0 +1,816 @@
+[
+  {
+    "id": "environment.worktop",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      -0.02500000037252903
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "machine.base",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.02199999988079071
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "machine.shell",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.10899999737739563
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "machine.rear",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.16300000250339508,
+      0.22200000286102295
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "machine.deck",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.07100000232458115,
+      0.20200000703334808
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "chamber.bowl",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.02500000037252903,
+      0.1420000046491623
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "lid.hinge",
+    "parent": null,
+    "nativeType": "EMPTY",
+    "positionBlenderM": [
+      0.0,
+      0.10499999672174454,
+      0.24500000476837158
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "lid.panel",
+    "parent": "lid.hinge",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.16500000655651093,
+      0.0
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "lid.window",
+    "parent": "lid.hinge",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.14499999582767487,
+      0.013000000268220901
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "rotor.axis",
+    "parent": null,
+    "nativeType": "EMPTY",
+    "positionBlenderM": [
+      0.0,
+      -0.02500000037252903,
+      0.17800000309944153
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "rotor.disk",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.01",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.0729999989271164,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.02",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.018893789499998093,
+      -0.07051258534193039,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.03",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0364999994635582,
+      -0.06321985274553299,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.04",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0516187958419323,
+      -0.0516187958419323,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.05",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.06321985274553299,
+      -0.0364999994635582,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.06",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.07051258534193039,
+      -0.018893789499998093,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.07",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0729999989271164,
+      -4.469960780325291e-18,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.08",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.07051258534193039,
+      0.018893789499998093,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.09",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.06321985274553299,
+      0.0364999994635582,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.10",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0516187958419323,
+      0.0516187958419323,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.11",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0364999994635582,
+      0.06321985274553299,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.12",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.018893789499998093,
+      0.07051258534193039,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.13",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      8.939921560650582e-18,
+      0.0729999989271164,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.14",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.018893789499998093,
+      0.07051258534193039,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.15",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.0364999994635582,
+      0.06321985274553299,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.16",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.0516187958419323,
+      0.0516187958419323,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.17",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.06321985274553299,
+      0.0364999994635582,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.18",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.07051258534193039,
+      0.018893789499998093,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.19",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.0729999989271164,
+      1.3409882340975873e-17,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.20",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.07051258534193039,
+      -0.018893789499998093,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.21",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.06321985274553299,
+      -0.0364999994635582,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.22",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.0516187958419323,
+      -0.0516187958419323,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.23",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.0364999994635582,
+      -0.06321985274553299,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "slot.24",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.018893789499998093,
+      -0.07051258534193039,
+      0.014000000432133675
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "rotor.mount",
+    "parent": "rotor.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.01899999938905239
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "rotor.cap.axis",
+    "parent": null,
+    "nativeType": "EMPTY",
+    "positionBlenderM": [
+      0.0,
+      -0.02500000037252903,
+      0.21400000154972076
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "rotor.cap",
+    "parent": "rotor.cap.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "rotor.quicklock",
+    "parent": "rotor.cap.axis",
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.009999999776482582
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.panel",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.210999995470047,
+      0.17800000309944153
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.display",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.23899999260902405,
+      0.19099999964237213
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.time",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.04600000008940697,
+      -0.24799999594688416,
+      0.15700000524520874
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.speed",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.04699999839067459,
+      -0.24799999594688416,
+      0.15700000524520874
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.start",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1120000034570694,
+      -0.24799999594688416,
+      0.164000004529953
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.open",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1120000034570694,
+      -0.24799999594688416,
+      0.2070000022649765
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.fasttemp",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1120000034570694,
+      -0.24799999594688416,
+      0.14300000667572021
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.unit",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1120000034570694,
+      -0.24799999594688416,
+      0.16899999976158142
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.menu",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1120000034570694,
+      -0.24799999594688416,
+      0.20999999344348907
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.short",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.09399999678134918,
+      -0.24799999594688416,
+      0.1889999955892563
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.tempup",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.24799999594688416,
+      0.1720000058412552
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "controls.tempdown",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.0,
+      -0.24799999594688416,
+      0.1459999978542328
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "power.switch",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.14800000190734863,
+      0.16500000655651093,
+      0.10000000149011612
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.00",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.054999999701976776
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.01",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.06599999964237213
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.02",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.07699999958276749
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.03",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.08799999952316284
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.04",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.0989999994635582
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.05",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.10999999940395355
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.06",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.12099999934434891
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.07",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.13199999928474426
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.left.08",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.1459999978542328,
+      0.14000000059604645,
+      0.14300000667572021
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.00",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.054999999701976776
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.01",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.06599999964237213
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.02",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.07699999958276749
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.03",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.08799999952316284
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.04",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.0989999994635582
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.05",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.10999999940395355
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.06",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.12099999934434891
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.07",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.13199999928474426
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "vent.right.08",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.1459999978542328,
+      0.14000000059604645,
+      0.14300000667572021
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "tube.SYN-18-A",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.22499999403953552,
+      -0.11999999731779099,
+      0.027000000700354576
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "tube.cap.SYN-18-A",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      -0.22499999403953552,
+      -0.11999999731779099,
+      0.054999999701976776
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "tube.SYN-18-B",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.22499999403953552,
+      -0.11999999731779099,
+      0.027000000700354576
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  },
+  {
+    "id": "tube.cap.SYN-18-B",
+    "parent": null,
+    "nativeType": "MESH",
+    "positionBlenderM": [
+      0.22499999403953552,
+      -0.11999999731779099,
+      0.054999999701976776
+    ],
+    "dimensionClass": "educational_schematic_except_envelope"
+  }
+]

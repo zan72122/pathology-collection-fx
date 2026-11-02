@@ -1,0 +1,1 @@
+export{t as defaultVertexShaderWGSL}from"./default.vertex-C-2I3jFk.js";

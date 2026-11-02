@@ -1,0 +1,1 @@
+export{t as particlesPixelShader}from"./particles.fragment-B-a3MEDr.js";

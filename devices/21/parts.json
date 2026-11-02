@@ -1,0 +1,402 @@
+[
+  {
+    "id": "environment.bench",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      -0.017999999225139618
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "machine.base",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.012000000104308128
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "machine.body",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.03500000014901161
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.touchscreen",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.03500000014901161,
+      0.0560000017285347
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "controls.display",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.03500000014901161,
+      0.05900000035762787
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "chamber.rim",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.07000000029802322,
+      0.054999999701976776
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "lid.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.09799999743700027,
+      0.0560000017285347
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "lid.panel",
+    "parent": "lid.root",
+    "positionBlenderM": [
+      0.0,
+      -0.027000000700354576,
+      0.003000000026077032
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "lid.inner",
+    "parent": "lid.root",
+    "positionBlenderM": [
+      0.0,
+      -0.027000000700354576,
+      -0.0010000000474974513
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "power.adapter",
+    "parent": null,
+    "positionBlenderM": [
+      0.11999999731779099,
+      0.11500000208616257,
+      0.014000000432133675
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "power.inlet",
+    "parent": null,
+    "positionBlenderM": [
+      0.03999999910593033,
+      0.12700000405311584,
+      0.027000000700354576
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "ports.usbA",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.12700000405311584,
+      0.026000000536441803
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "ports.usbMini",
+    "parent": null,
+    "positionBlenderM": [
+      -0.02500000037252903,
+      0.12700000405311584,
+      0.026000000536441803
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.STD-21-1",
+    "parent": null,
+    "positionBlenderM": [
+      -0.2199999988079071,
+      -0.05999999865889549,
+      0.028999999165534973
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.body.STD-21-1",
+    "parent": "tube.STD-21-1",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.cap.STD-21-1",
+    "parent": "tube.STD-21-1",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.026000000536441803
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.liquid.STD-21-1",
+    "parent": "tube.STD-21-1",
+    "positionBlenderM": [
+      0.0,
+      -0.004999999888241291,
+      -0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.STD-21-2",
+    "parent": null,
+    "positionBlenderM": [
+      -0.18199999630451202,
+      -0.05999999865889549,
+      0.028999999165534973
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.body.STD-21-2",
+    "parent": "tube.STD-21-2",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.cap.STD-21-2",
+    "parent": "tube.STD-21-2",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.026000000536441803
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.liquid.STD-21-2",
+    "parent": "tube.STD-21-2",
+    "positionBlenderM": [
+      0.0,
+      -0.004999999888241291,
+      -0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.SYN-21-A",
+    "parent": null,
+    "positionBlenderM": [
+      -0.14399999380111694,
+      -0.05999999865889549,
+      0.028999999165534973
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.body.SYN-21-A",
+    "parent": "tube.SYN-21-A",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.cap.SYN-21-A",
+    "parent": "tube.SYN-21-A",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.026000000536441803
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.liquid.SYN-21-A",
+    "parent": "tube.SYN-21-A",
+    "positionBlenderM": [
+      0.0,
+      -0.004999999888241291,
+      -0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.SYN-21-B",
+    "parent": null,
+    "positionBlenderM": [
+      -0.10599999874830246,
+      -0.05999999865889549,
+      0.028999999165534973
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.body.SYN-21-B",
+    "parent": "tube.SYN-21-B",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.cap.SYN-21-B",
+    "parent": "tube.SYN-21-B",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.026000000536441803
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.liquid.SYN-21-B",
+    "parent": "tube.SYN-21-B",
+    "positionBlenderM": [
+      0.0,
+      -0.004999999888241291,
+      -0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.SYN-21-C",
+    "parent": null,
+    "positionBlenderM": [
+      -0.06800000369548798,
+      -0.05999999865889549,
+      0.028999999165534973
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.body.SYN-21-C",
+    "parent": "tube.SYN-21-C",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.cap.SYN-21-C",
+    "parent": "tube.SYN-21-C",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.026000000536441803
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "tube.liquid.SYN-21-C",
+    "parent": "tube.SYN-21-C",
+    "positionBlenderM": [
+      0.0,
+      -0.004999999888241291,
+      -0.006000000052154064
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "optics.ledBlue",
+    "parent": null,
+    "positionBlenderM": [
+      -0.02800000086426735,
+      0.07000000029802322,
+      0.02800000086426735
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "optics.excitationFilter",
+    "parent": null,
+    "positionBlenderM": [
+      -0.017999999225139618,
+      0.07000000029802322,
+      0.02800000086426735
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "optics.emissionFilter",
+    "parent": null,
+    "positionBlenderM": [
+      0.017000000923871994,
+      0.07000000029802322,
+      0.02800000086426735
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "optics.detector",
+    "parent": null,
+    "positionBlenderM": [
+      0.029999999329447746,
+      0.07000000029802322,
+      0.02800000086426735
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "optics.ledRed",
+    "parent": null,
+    "positionBlenderM": [
+      -0.02800000086426735,
+      0.09000000357627869,
+      0.02800000086426735
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "teaching.excitationBeam",
+    "parent": null,
+    "positionBlenderM": [
+      -0.008999999612569809,
+      0.07000000029802322,
+      0.02800000086426735
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  },
+  {
+    "id": "teaching.emissionBeam",
+    "parent": null,
+    "positionBlenderM": [
+      0.008999999612569809,
+      0.07000000029802322,
+      0.02800000086426735
+    ],
+    "dimensionClass": "coarse; only envelope sourced"
+  }
+]

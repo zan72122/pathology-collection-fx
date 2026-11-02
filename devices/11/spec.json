@@ -1,0 +1,209 @@
+{
+  "deviceId": "11",
+  "specVersion": "WATER-BATH-M-G2-R3",
+  "identity": {
+    "manufacturer": "Leica Biosystems",
+    "model": "HistoCore Water Bath M",
+    "catalog": "140607020C1",
+    "selection": "agent-selected new exterior candidate; human selection pending"
+  },
+  "geometry": {
+    "closedEnvelope": {
+      "value": {
+        "width": 0.28,
+        "depth": 0.28,
+        "height": 0.105
+      },
+      "unit": "m",
+      "source": "IFU p14-15"
+    },
+    "tray": {
+      "width": 0.23,
+      "depth": 0.18,
+      "height": 0.053,
+      "source": "IFU p14"
+    }
+  },
+  "operations": [
+    {
+      "name": "トレイ装着",
+      "design": "取り外せるトレイの着座と漏れ確認を分ける。現版は空トレイ固定。",
+      "implemented": false,
+      "implementationScope": "PARTIAL_ROUGH_INSPECTION_ONLY",
+      "g2Id": "OP01",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "給水",
+      "design": "通電前に十分な蒸留水を入れる。正確な容量・水位は未確定。",
+      "implemented": false,
+      "g2Id": "OP02",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "主電源",
+      "design": "前面右の主電源と加熱Run/Stopを区別する。",
+      "implemented": false,
+      "g2Id": "OP03",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "加熱開始・停止",
+      "design": "Run/Stop単押しは全系統加熱、長押しは接続乾燥機への加熱。未接続。",
+      "implemented": false,
+      "g2Id": "OP04",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "対象モジュール",
+      "design": "上下キーで温浴槽と接続乾燥機の表示対象を選ぶ。",
+      "implemented": false,
+      "g2Id": "OP05",
+      "g2Status": "NOT_IMPLEMENTED"
+    },
+    {
+      "name": "設定温度",
+      "design": "保持して設定値を表示、単押し0.1℃、保持後1℃単位。最大60℃は能力値で標本条件の正解ではない。",
+      "implemented": false,
+      "g2Id": "OP06",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "実温度と設定値",
+      "design": "表示実温度と保存設定値を分離する。現版は消灯画面で架空測定値を出さない。",
+      "implemented": false,
+      "g2Id": "OP07",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "状態表示",
+      "design": "緑=目標到達、赤=過熱または故障、赤点滅=未到達、黄=設定中。赤のみで原因確定しない。",
+      "implemented": false,
+      "g2Id": "OP08",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "照明",
+      "design": "補助LEDのON/OFFは設計のみ。温度や加熱の指標にしない。",
+      "implemented": false,
+      "g2Id": "OP09",
+      "g2Status": "PARTIAL"
+    },
+    {
+      "name": "切片浮遊・展開",
+      "design": "リボンIDと方向を保持。しわ・過伸展の品質評価や温度時間モデルは未校正。",
+      "implemented": false,
+      "g2Id": "OP10",
+      "g2Status": "PARTIAL",
+      "g2Scope": "Synthetic shared-state contact exposure and matching-slide transfer; uncalibrated teaching only"
+    },
+    {
+      "name": "スライド回収",
+      "design": "標本ID・スライドIDと向きを保持。回収しただけで適切な標本と判定しない。",
+      "implemented": false,
+      "g2Id": "OP11",
+      "g2Status": "PARTIAL",
+      "g2Scope": "Synthetic shared-state contact exposure and matching-slide transfer; uncalibrated teaching only"
+    },
+    {
+      "name": "換水・清掃",
+      "design": "電源分離・冷却・排水後に行う設計。トレイ除去で露出する加熱面に注意。",
+      "implemented": false,
+      "g2Id": "OP12",
+      "g2Status": "PARTIAL",
+      "g2Scope": "IFU conditions, target/method selection and explicit self-inspection record; not cleanliness or repair proof"
+    },
+    {
+      "name": "移動",
+      "design": "OFF、電源分離、冷却、空槽、乾燥機分離を設計。",
+      "implemented": false,
+      "g2Id": "OP13",
+      "g2Status": "NOT_IMPLEMENTED"
+    },
+    {
+      "name": "乾燥機接続",
+      "design": "最大2台の専用乾燥機を背面へ接続する設計。11では外形のみ、12は別候補。",
+      "implemented": false,
+      "g2Id": "OP14",
+      "g2Status": "NOT_IMPLEMENTED"
+    }
+  ],
+  "g1Approved": false,
+  "g2Approved": false,
+  "uncertainties": [
+    "Local positions and radii estimated from IFU figures",
+    "Fill volume/level unspecified",
+    "Regional electrical configuration not selected",
+    "No thermal, tissue or operating simulation"
+  ],
+  "nightRefinement": {
+    "version": "WATER-BATH-M-G1-R2",
+    "baseline": "[local-path-redacted]",
+    "scope": "empty/cooled/disconnected exemplar inspection view only; no fluid/heat result",
+    "trayLiftM": {
+      "range": [
+        0,
+        0.08
+      ],
+      "classification": "educational held-inspection pose, no mechanical stop"
+    },
+    "axis": "Blender+Z / GLB+Y",
+    "assumption": "empty-cool-disconnected-inspection, not sensor-verified real conditions",
+    "source": "IFU1.0 RevA p13 Fig1/2, p20 handling, p22 Fig17",
+    "g1Approved": false,
+    "g2Approved": false
+  },
+  "causalModelPlan": {
+    "status": "PARTIALLY_IMPLEMENTED_G2_R1",
+    "heat": "water thermal mass and losses; heater/volume/loss coefficients uncalibrated, no numerical outcome",
+    "tissue": "same ribbon/slide IDs, qualitative unfolding vs overextension; thresholds uncalibrated",
+    "constraints": [
+      "fill sufficient distilled water before power perIFUp20",
+      "tray removal only power-disconnected,cool,empty handling",
+      "actual temperature separate from setpoint; indicator colours not cause diagnosis",
+      "LED independent of heating",
+      "optional Leica dryers not selected; device12 CellPath standalone not electrically linked"
+    ],
+    "acceptanceFuture": [
+      "normal fill/set/heat/readiness/section pickup with sameIDs",
+      "water missing refuses heating start",
+      "setpoint change not instant actual temperature",
+      "save seed/state/time and same specimen identity",
+      "overheat/fault distinction",
+      "drawer/LED dry inspection does not manufacture thermal success"
+    ]
+  },
+  "g2Implementation": {
+    "phase": "G2_IN_PROGRESS",
+    "model": "bath11-teaching/1",
+    "partialOperations": 8,
+    "fullyAcceptedOperations": 0,
+    "dryRunProtection": "Teaching command guard only; no real device sensor claim",
+    "candidate": "bath11-basic-causal-v1",
+    "correctionRounds": 3,
+    "limit": 3,
+    "verification": "Limited initial scope only; full 14 operations not accepted",
+    "r2": {
+      "candidate": "bath11-section-workflow-v1",
+      "corrections": 2,
+      "limit": 3,
+      "scope": "OP10/11",
+      "acceptance": "ACCEPTANCE_R2.md",
+      "criteria": "SCOPE_R2.json",
+      "coreUnchanged": true,
+      "partialOperations": 10,
+      "fullyAccepted": 0
+    },
+    "r3": {
+      "candidate": "bath11-cleaning-record-v1",
+      "corrections": 2,
+      "limit": 3,
+      "partialOperations": 11,
+      "fullyAccepted": 0,
+      "acceptance": "ACCEPTANCE_R3.md",
+      "scope": "SCOPE_R3.json",
+      "R2Safari": "verified normal3D and visible fields; no native save-byte proof",
+      "immutableCore": true
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export{t as defaultPixelShader}from"./default.fragment-Ds7AL7C0.js";

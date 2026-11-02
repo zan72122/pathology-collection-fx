@@ -1,0 +1,476 @@
+{
+  "deviceId": "18",
+  "version": "5425R-G2-R1",
+  "manufacturer": "Eppendorf",
+  "model": "Centrifuge 5425 R",
+  "configuration": {
+    "voltage": "100V50-60Hz",
+    "controls": "rotary knobs",
+    "rotor": "FA-24x2",
+    "lid": "QuickLock",
+    "sku": "5406000437"
+  },
+  "state": "G2_IN_PROGRESS",
+  "sources": [
+    {
+      "id": "IFU-EN",
+      "url": "https://www.eppendorf.com/product-media/doc/en/924635/Centrifugation_Operating-manual_Centrifuge-5425-R.pdf",
+      "edition": "5406 900 020-02/122021",
+      "sha256": "e25b5f44a92fa20ce58ab4e301f27f14324e9165f77f268aac1119051f2bfe74",
+      "inspectedFigures": [
+        "p13 Fig3-1",
+        "p21 keypad only; knob compatibility note"
+      ]
+    },
+    {
+      "id": "PRODUCT-JP",
+      "url": "https://www.eppendorf.com/jp-en/Products/Centrifugation/Microcentrifuges/Centrifuge-5425-5425R-p-PF-934144",
+      "selection": "SKU5406000437",
+      "images": "references/image-sources.json; closed/knob/open inspected",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "SCIENCE",
+      "url": "https://media.beckman.com/-/media/pdf-assets/whitepapers/centrifugation-analytical-ultracentrifugation-analyzing-sedimentation-and-diffusion.pdf",
+      "pages": "2-5",
+      "use": "general sedimentation equation only; no optical analyzer implied"
+    },
+    {
+      "id": "IFU-DE",
+      "url": "https://www.eppendorf.com/product-media/doc/de/924635/Centrifugation_Operating-manual_Centrifuge-5425-R.pdf",
+      "edition": "5406 900 020-02/122021",
+      "use": "p29-30 stopped cooling not below4C; English ambiguous phrase clarified",
+      "sha256": "fbcf6e125a7bb17fc6e88340632831956ff599a68d757b3d846e6f10630626c1"
+    }
+  ],
+  "confirmed": {
+    "envelopeM": [
+      0.29,
+      0.48,
+      0.26
+    ],
+    "maxRPM": 15060,
+    "nominalMaxRCF": 21300,
+    "maxRadiusM": 0.084,
+    "slots": 24,
+    "temperatureC": [
+      -10,
+      40
+    ],
+    "maxMassPerBoreG": 3.75,
+    "rpmSteps": "100..5000:10rpm; >5000:100rpm; endpoint15060",
+    "timeSteps": "p49 5s stated but p31 below10s infinite; initial subset>=10s with documented increments"
+  },
+  "geometry": {
+    "units": "m",
+    "Blender": "Xright Yback Zup; front-Y",
+    "glTF": "Xright Yup Zback; front+Z",
+    "origin": "worktop at0",
+    "lidAxis": "localX at [0,.105,.245] Blender; open -95deg schematic",
+    "parts": "model/parts.json; G2 74 IDs identical to G1, new5425R-g2.blend/.glb",
+    "unknown": [
+      "internal dimensions",
+      "lid exact pivot and angle",
+      "QuickLock angle and torque",
+      "24-slot collision/fit",
+      "thermal control internals",
+      "fixed-angle tube inclination and actual clearances; upright coarse proxies, no real fit claim"
+    ]
+  },
+  "teaching": {
+    "stepMs": 20,
+    "rpmAccelerationPerSec": 3000,
+    "rpmSoftPerSec": 750,
+    "transferMs": 1200,
+    "lidMs": 1000,
+    "thermalTauRunningSec": 180,
+    "thermalTauIdleSec": 900,
+    "sampleThermalTauSec": 120,
+    "ambientC": 22,
+    "fastTempRPM": 3000,
+    "ATSET": "rpm-only setting,95%rpm;RCF display only",
+    "particleS": [
+      2e-08,
+      4e-09
+    ],
+    "radiusInitialM": [
+      0.047,
+      0.0755
+    ],
+    "captureRadiusM": 0.084,
+    "equations": [
+      "RCF=r*(2*pi*rpm/60)^2/9.80665",
+      "r=min(rwall,r0*exp(s*integral(omega^2 dt)))",
+      "Tnext=Ttarget+(T-Ttarget)*exp(-dt/tau)"
+    ],
+    "limitations": [
+      "no diffusion, re-suspension or fraction purity",
+      "fixed s no calibrated temperature dependence",
+      "no actual imbalance sensor",
+      "no clinical quality or containment claim",
+      "no true aerosol-tightness verification"
+    ]
+  },
+  "operations": [
+    {
+      "id": "C18-01",
+      "name": "電源",
+      "priority": "P0",
+      "source": "IFU-EN p25",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-02",
+      "name": "装置蓋の開閉",
+      "priority": "P0",
+      "source": "IFU-EN p28/31",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-03",
+      "name": "ロータ着脱・固定",
+      "priority": "P0",
+      "source": "IFU-EN p25",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-04",
+      "name": "対向する同種管の装填",
+      "priority": "P0",
+      "source": "IFU-EN p26",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-05",
+      "name": "対向質量照合",
+      "priority": "P0",
+      "source": "IFU-EN p26",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-06",
+      "name": "QuickLock蓋装着・締結",
+      "priority": "P0",
+      "source": "IFU-EN p28",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-07",
+      "name": "rpm設定",
+      "priority": "P0",
+      "source": "IFU-EN p21/31",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-08",
+      "name": "RCF換算表示",
+      "priority": "P1",
+      "source": "IFU-EN p21/52",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-09",
+      "name": "時間設定",
+      "priority": "P0",
+      "source": "IFU-EN p31",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-10",
+      "name": "設定温度・実温度",
+      "priority": "P0",
+      "source": "IFU-EN p29",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-11",
+      "name": "無試料FastTemp",
+      "priority": "P1",
+      "source": "IFU-EN p29",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-12",
+      "name": "SOFT加減速",
+      "priority": "P1",
+      "source": "IFU-EN p24",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-13",
+      "name": "ATSET計時開始",
+      "priority": "P1",
+      "source": "IFU-EN p24",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-14",
+      "name": "時間運転",
+      "priority": "P0",
+      "source": "IFU-EN p31",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-15",
+      "name": "途中停止・減速",
+      "priority": "P0",
+      "source": "IFU-EN p31",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-16",
+      "name": "停止後同一ID回収",
+      "priority": "P0",
+      "source": "IFU-EN p31",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "limited-connected",
+      "wholeAccepted": false,
+      "evidence": "tests/model.test.mjs; reports/all-tests.log; reports/chromium-*.txt; reports/safari-*.txt",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-17",
+      "name": "SHORT",
+      "priority": "P1",
+      "source": "IFU-EN p32",
+      "implemented": false,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "not-implemented",
+      "wholeAccepted": false,
+      "evidence": "none",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-18",
+      "name": "連続運転",
+      "priority": "P1",
+      "source": "IFU-EN p31",
+      "implemented": false,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "not-implemented",
+      "wholeAccepted": false,
+      "evidence": "none",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-19",
+      "name": "清掃・点検",
+      "priority": "P1",
+      "source": "IFU-EN p33-37",
+      "implemented": false,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "not-implemented",
+      "wholeAccepted": false,
+      "evidence": "none",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-20",
+      "name": "警報と温度監視",
+      "priority": "P0",
+      "source": "IFU-EN p29/41-44",
+      "implemented": true,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "partial-temperature-monitor",
+      "wholeAccepted": false,
+      "evidence": "unit relation only; actual alarm integration pending",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-21",
+      "name": "LOCK/ALARM/VOL/TEMP/SLEEPメニュー",
+      "priority": "P1",
+      "source": "IFU-EN p24",
+      "implemented": false,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "not-implemented",
+      "wholeAccepted": false,
+      "evidence": "none",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    },
+    {
+      "id": "C18-22",
+      "name": "設置・輸送・非常解錠",
+      "priority": "P1",
+      "source": "IFU-EN p19/40/46",
+      "implemented": false,
+      "acceptance": "dedicated normal/reject/restore tests required",
+      "status": "not-implemented",
+      "wholeAccepted": false,
+      "evidence": "none",
+      "conditions": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "rejection": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "mechanism": "See state command guards and SCOPE_R1; limited not full acceptance",
+      "result": "See state command guards and SCOPE_R1; limited not full acceptance"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "P0-STATE",
+      "expectation": "same ID/time/mechanism/science across3D/Japanese/restore"
+    },
+    {
+      "id": "P0-RECOVERY",
+      "expectation": "monotonic committed revision,stale pending cannot overwrite newer main,corruption rejected,concurrent writer excluded"
+    },
+    {
+      "id": "P0-SCIENCE",
+      "expectation": "independent RCF and exact integral/particle conservation,coast and interrupted partial state"
+    },
+    {
+      "id": "P1-3D",
+      "expectation": "stable IDs,axes,normal pointer input,visual inspection"
+    },
+    {
+      "id": "P1-PORTABILITY",
+      "expectation": "Chromium/WebKit/actualSafari separated,real mobile not assumed"
+    }
+  ],
+  "gates": {
+    "g1HumanApproved": false,
+    "g1WaitingWaived": true,
+    "g2HumanApproved": false,
+    "fullAcceptance": false
+  },
+  "repairLimit": null,
+  "communicationRetryLimit": 2
+}

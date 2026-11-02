@@ -1,0 +1,1 @@
+export{t as lightProxyVertexShader}from"./lightProxy.vertex-DDgHTKJO.js";

@@ -1,0 +1,1 @@
+export{t as outlineVertexShaderWGSL}from"./outline.vertex-BYLaFs2K.js";

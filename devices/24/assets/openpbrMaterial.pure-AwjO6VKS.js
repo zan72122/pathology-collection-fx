@@ -1,0 +1,1 @@
+export{t as OpenPBRMaterial,n as OpenPBRMaterialDefines,r as RegisterOpenpbrMaterial}from"./openpbrMaterial.pure-OGsVfUHR.js";

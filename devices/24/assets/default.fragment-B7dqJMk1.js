@@ -1,0 +1,1 @@
+export{t as defaultPixelShader}from"./default.fragment-Cx4Dp0HT.js";

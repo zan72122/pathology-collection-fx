@@ -1,0 +1,1 @@
+export{t as openpbrPixelShader}from"./openpbr.fragment-CbQo2SmG.js";

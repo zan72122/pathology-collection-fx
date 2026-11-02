@@ -1,0 +1,1 @@
+export{t as colorVertexShader}from"./color.vertex-l2H-i-g0.js";

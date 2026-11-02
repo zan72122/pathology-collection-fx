@@ -1,0 +1,228 @@
+{
+  "deviceId": "12",
+  "specVersion": "CELLTEC-MINI-DRYER-G2-R4",
+  "identity": {
+    "manufacturer": "CellPath",
+    "model": "CellTec Mini Section Dryer (230V)",
+    "catalog": "JAX-0300-00A",
+    "configuration": "IFU230V, no LEAN timer/identifier, empty chamber, rough friction-hinged lid",
+    "selection": "agent selected candidate; not human approved"
+  },
+  "geometry": {
+    "closedEnvelope": {
+      "value": {
+        "width": 0.265,
+        "depth": 0.385,
+        "height": 0.228
+      },
+      "unit": "m",
+      "classification": "IFU p5 provisional; official product page conflicts"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.cellpath.com/pdfs/ifu/jax030000aminisectiondryer230v.pdf",
+      "pages": [
+        1,
+        5,
+        6,
+        12,
+        13,
+        14,
+        27
+      ]
+    },
+    {
+      "url": "https://www.cellpath.com/mini-section-dryer-230v-a-c-50-60hz-500-watts.html",
+      "conflicts": "page D323 W267 H175,75C,dual110-230V240W vs IFU W265 D385 H228,70C,220-240V500W; heading230V500W"
+    }
+  ],
+  "operations": [
+    {
+      "id": "D12-01",
+      "name": "配置と電源",
+      "design": "水平な台に設置。コンセント通電と本体ONを別状態にする。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "PARTIAL",
+      "g2Scope": "供給接続/供給スイッチ/本体ONを分離。設置安全の実機適合未検証。"
+    },
+    {
+      "id": "D12-02",
+      "name": "送風",
+      "design": "接続通電時からファンが回るIFU仕様。本体加熱OFFと送風停止を混同しない。",
+      "implemented": false,
+      "priority": "P0",
+      "g2Status": "PARTIAL",
+      "g2Scope": "個数未確定の送風系。供給通電に連動し、本体OFFでも送風。"
+    },
+    {
+      "id": "D12-03",
+      "name": "温度設定",
+      "design": "DOWN単押しでSP1設定、上下で調整、Pまたは無入力15秒で終了。サービス設定は除外。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "PARTIAL",
+      "g2Scope": "DOWN/SP1/UP/P/15秒。連続保持加速とサービス設定は未接続。"
+    },
+    {
+      "id": "D12-04",
+      "name": "表示とヒーター灯",
+      "design": "実測温度・設定値・ヒーター活動灯を分ける。架空の現在値は表示しない。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "PARTIAL",
+      "g2Scope": "模式現在温度と設定値を補助操作パネルに表示。3D灯は発熱連動、3D本体画面の数字は未表示。"
+    },
+    {
+      "id": "D12-05",
+      "name": "予熱と平衡",
+      "design": "表示の設定到達と室内全体の平衡を区別。実機時間を任意条件に保証しない。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "PARTIAL",
+      "g2Scope": "現在温度と設定値を区別。室内全体の実平衡・fuzzy制御は未再現。"
+    },
+    {
+      "id": "D12-06",
+      "name": "蓋開閉",
+      "design": "摩擦ヒンジによる蓋開閉を空・冷却・電源分離を仮定した点検表示で接続。開蓋時のヒーター遮断は運転未接続。",
+      "implemented": false,
+      "priority": "P0",
+      "implementationScope": "PARTIAL_ROUGH_LID_INSPECTION",
+      "g2Status": "PARTIAL",
+      "g2Scope": "既存近似軸・範囲を保持。開蓋でヒーター入力を遮断し残熱を保持。"
+    },
+    {
+      "id": "D12-07",
+      "name": "ラック搬入",
+      "design": "ラック/スライドIDと方向を保持。確定していない4～6ラックを固定容量保証にしない。",
+      "implemented": false,
+      "priority": "P0",
+      "g2Status": "PARTIAL",
+      "g2Scope": "同じ1ラック/1スライド/合成切片IDの搬入。占有/誤ID/閉蓋受渡しを拒否。"
+    },
+    {
+      "id": "D12-08",
+      "name": "熱移動",
+      "design": "空気→スライド→切片の対流・伝導、表面水の蒸発を模式的に設計。係数と乾燥時間は未校正。",
+      "implemented": false,
+      "priority": "P0",
+      "g2Status": "PARTIAL",
+      "g2Scope": "代表空気とスライド温度・表面水蒸発潜熱を連動。全熱定数は模式。"
+    },
+    {
+      "id": "D12-09",
+      "name": "乾燥の判定",
+      "design": "タイマー経過と実際の乾燥を別状態にし、過熱や標本品質を自動保証しない。",
+      "implemented": false,
+      "priority": "P0",
+      "g2Status": "PARTIAL",
+      "g2Scope": "模式残水量を表示。時間や設定値だけで品質合格としない。"
+    },
+    {
+      "id": "D12-10",
+      "name": "ラック回収",
+      "design": "同一IDのラック/スライドを回収。熱い表面と残留熱を扱う。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "PARTIAL",
+      "g2Scope": "同じIDを回収。回収後も温度と残水量を保持。"
+    },
+    {
+      "id": "D12-11",
+      "name": "清掃",
+      "design": "分離・冷却後のトレイ清掃と吸気フィルター点検を区別。分解修理は対象外。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "PARTIAL",
+      "g2Scope": "独立sidecar：トレイ観察/正規道具/模式除去/再点検、吸気系堆積の点検まで。清掃方法不詳のfilter除去/機能回復は未実装。"
+    },
+    {
+      "id": "D12-12",
+      "name": "故障と保護",
+      "design": "過温保護・サーキットブレーカー・蓋スイッチの働きは設計のみ。復帰条件は根拠確認後。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "D12-13",
+      "name": "オプション",
+      "design": "LEANタイマー/番号ラックは未採用。なくても電源・温度制御を持つ独立機器候補。",
+      "implemented": false,
+      "priority": "P1",
+      "g2Status": "NOT_IMPLEMENTED"
+    }
+  ],
+  "g1Approved": false,
+  "g2Approved": false,
+  "operatingBindings": 10,
+  "unknown": [
+    "Applicable generation/serial unresolved",
+    "Lid exact contour, hinge axis and opening limit approximate",
+    "Rear port positions unknown",
+    "Thermal constants/evaporation validation absent",
+    "IFU fan count conflict: p14 three vs p11/15/16 two; use aggregate fan state"
+  ],
+  "roughConnectedOperations": 1,
+  "completedOperations": 0,
+  "causalModelPlan": {
+    "status": "PARTIAL_SINGLE_RACK_EDUCATIONAL_MODEL",
+    "conditions": [
+      "mains connected independent of heater switch",
+      "fans run when supply socket on",
+      "lid open heater cutout; restore on close",
+      "actual chamber vs setpoint; equilibrium not target crossing",
+      "rack and slide identity kept through load and retrieval"
+    ],
+    "scientificResult": "Air/slide temperatures and surface-water evaporation coupled by latent heat. All coefficients uncalibrated; no clinical quality or manufacturer timing prediction.",
+    "acceptancePlanned": [
+      "supply on heater off fan condition",
+      "lid open cuts heat and preserves specimen identity",
+      "setpoint input short down/SP1/P/15sec distinction",
+      "dryness not inferred from timer or setpoint",
+      "save-restore state/seed/sampleIDs when science implemented"
+    ]
+  },
+  "g2Phase": "G2_IN_PROGRESS",
+  "g2Candidate": {
+    "id": "dryer12-causal-v1",
+    "correctionRounds": 3,
+    "limit": null,
+    "exteriorRounds": "UNKNOWN_FROZEN",
+    "manufacturerModel": "IFU Issue2 June2023 candidate, not individual SKU verified",
+    "teaching": "100ms fixed-step; 1rack/1slide; lumped thermal and latent moisture model; no calibrated drying or clinical quality",
+    "scopeFile": "SCOPE_G2_R1.md",
+    "fanCountConflict": "IFU p14 three, p11/15/16 two. Geometry frozen; aggregate airflow state only.",
+    "state": "QUARANTINED_FOR_FULL_G2_ACCEPTANCE",
+    "priorLimit": 3,
+    "limitPolicy": "User 2026-10-24 removed repair count limit; prior rounds/history retained"
+  },
+  "g2CleaningCandidate": {
+    "id": "dryer12-cleaning-procedure-v1",
+    "correctionRounds": 1,
+    "limit": null,
+    "state": "LIMITED_SCOPE_VERIFIED",
+    "wholeAcceptance": "QUARANTINED_UNCHANGED",
+    "criteria": "CK01-CK06",
+    "coreUnchanged": false,
+    "priorLimit": 3,
+    "limitPolicy": "User 2026-10-24 removed repair count limit; prior rounds/history retained",
+    "r4Change": "Context strips display-only clock/deadline; dedicated key; old cleaning history retained without migration"
+  },
+  "r4InputClock": {
+    "source": "IFU Issue2 June2023 p6",
+    "inputTimeoutMs": 15000,
+    "clock": "visible-owned host milliseconds independent of simulation pause/speed",
+    "hidden": "flush last visible interval then freeze; pause science",
+    "restore": "resume saved remaining display time; no unobserved elapsed time",
+    "SP1AlternationMs": {
+      "value": 1000,
+      "classification": "schematic, manufacturer period unknown"
+    },
+    "schema": 2,
+    "legacy": "strict schema1 migration, remaining old deadline, never write old key",
+    "acceptance": "limited; physical SKU/geometry/control and actual Safari R4 pending"
+  }
+}

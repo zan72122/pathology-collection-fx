@@ -1,0 +1,1 @@
+export{t as backgroundVertexShaderWGSL}from"./background.vertex-IfNckaUg.js";

@@ -1,0 +1,642 @@
+[
+  {
+    "id": "environment.bench",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.07999999821186066,
+      -0.02500000037252903
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "body.rear",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.11999999731779099,
+      0.2619999945163727
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "body.left",
+    "parent": null,
+    "positionBlenderM": [
+      -0.21400000154972076,
+      -0.10000000149011612,
+      0.2619999945163727
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "body.right",
+    "parent": null,
+    "positionBlenderM": [
+      0.21400000154972076,
+      -0.10000000149011612,
+      0.2619999945163727
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "body.floor",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.10000000149011612,
+      0.03500000014901161
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "body.deck",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.10000000149011612,
+      0.3100000023841858
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "body.top",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.5070000290870667
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "foot.-0.19.-0.18",
+    "parent": null,
+    "positionBlenderM": [
+      -0.1899999976158142,
+      -0.18000000715255737,
+      0.008999999612569809
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "foot.-0.19.0.18",
+    "parent": null,
+    "positionBlenderM": [
+      -0.1899999976158142,
+      0.18000000715255737,
+      0.008999999612569809
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "foot.0.19.-0.18",
+    "parent": null,
+    "positionBlenderM": [
+      0.1899999976158142,
+      -0.18000000715255737,
+      0.008999999612569809
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "foot.0.19.0.18",
+    "parent": null,
+    "positionBlenderM": [
+      0.1899999976158142,
+      0.18000000715255737,
+      0.008999999612569809
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "screen.frame",
+    "parent": null,
+    "positionBlenderM": [
+      -0.0820000022649765,
+      -0.15000000596046448,
+      0.42500001192092896
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "screen.display",
+    "parent": null,
+    "positionBlenderM": [
+      -0.0820000022649765,
+      -0.17299999296665192,
+      0.42500001192092896
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "brand.panel",
+    "parent": null,
+    "positionBlenderM": [
+      0.14000000059604645,
+      -0.12999999523162842,
+      0.42500001192092896
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fcDoor.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.05999999865889549,
+      0.32899999618530273
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fcDoor.panel",
+    "parent": "fcDoor.root",
+    "positionBlenderM": [
+      0.0,
+      -0.07999999821186066,
+      0.0
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "front.statusPanel",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.22599999606609344,
+      0.2809999883174896
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "status.bar",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.2409999966621399,
+      0.28200000524520874
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "power.button",
+    "parent": null,
+    "positionBlenderM": [
+      -0.1850000023841858,
+      -0.24300000071525574,
+      0.3070000112056732
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "reagentDoor.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      -0.23999999463558197,
+      0.04500000178813934
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "reagentDoor.panel",
+    "parent": "reagentDoor.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.10000000149011612
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fc.stage",
+    "parent": null,
+    "positionBlenderM": [
+      0.05999999865889549,
+      -0.14499999582767487,
+      0.33399999141693115
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "latch.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.05999999865889549,
+      -0.10000000149011612,
+      0.34200000762939453
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "latch.frame",
+    "parent": "latch.root",
+    "positionBlenderM": [
+      0.0,
+      -0.04500000178813934,
+      0.0
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "latch.release",
+    "parent": null,
+    "positionBlenderM": [
+      0.125,
+      -0.17499999701976776,
+      0.3400000035762787
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fc.root",
+    "parent": null,
+    "positionBlenderM": [
+      -0.41999998688697815,
+      -0.11999999731779099,
+      0.02500000037252903
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fc.frame",
+    "parent": "fc.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fc.window",
+    "parent": "fc.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.007000000216066837
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fc.port.0",
+    "parent": "fc.root",
+    "positionBlenderM": [
+      0.02800000086426735,
+      -0.02199999988079071,
+      0.007000000216066837
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "fc.port.1",
+    "parent": "fc.root",
+    "positionBlenderM": [
+      0.02800000086426735,
+      0.02199999988079071,
+      0.007000000216066837
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.root",
+    "parent": null,
+    "positionBlenderM": [
+      -0.3799999952316284,
+      -0.33000001311302185,
+      0.054999999701976776
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.body",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.1",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.09000000357627869,
+      -0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.2",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.029999999329447746,
+      -0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.3",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.029999999329447746,
+      -0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.4",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.09000000357627869,
+      -0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.5",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.09000000357627869,
+      -0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.6",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.029999999329447746,
+      -0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.7",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.029999999329447746,
+      -0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.8",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.09000000357627869,
+      -0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.9",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.09000000357627869,
+      0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.10",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.029999999329447746,
+      0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.11",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.029999999329447746,
+      0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.12",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.09000000357627869,
+      0.029999999329447746,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.13",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.09000000357627869,
+      0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.14",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      -0.029999999329447746,
+      0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.15",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.029999999329447746,
+      0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "cart.well.16",
+    "parent": "cart.root",
+    "positionBlenderM": [
+      0.09000000357627869,
+      0.09000000357627869,
+      0.04899999871850014
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "bottle.root",
+    "parent": null,
+    "positionBlenderM": [
+      0.4000000059604645,
+      -0.20999999344348907,
+      0.10000000149011612
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "bottle.body",
+    "parent": "bottle.root",
+    "positionBlenderM": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "bottle.neck",
+    "parent": "bottle.root",
+    "positionBlenderM": [
+      0.0,
+      -0.02500000037252903,
+      0.08500000089406967
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "bottle.cap",
+    "parent": "bottle.root",
+    "positionBlenderM": [
+      0.0,
+      -0.02500000037252903,
+      0.10000000149011612
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "bay.cartFloor",
+    "parent": null,
+    "positionBlenderM": [
+      -0.05999999865889549,
+      -0.05000000074505806,
+      0.07500000298023224
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "bay.bottleFloor",
+    "parent": null,
+    "positionBlenderM": [
+      0.1550000011920929,
+      -0.03999999910593033,
+      0.07000000029802322
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "teaching.thermal",
+    "parent": null,
+    "positionBlenderM": [
+      0.05999999865889549,
+      -0.14499999582767487,
+      0.30000001192092896
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "teaching.optics",
+    "parent": null,
+    "positionBlenderM": [
+      0.0,
+      0.019999999552965164,
+      0.3700000047683716
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.0",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.029999999329447746,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.1",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.04800000041723251,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.2",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.06599999964237213,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.3",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.08399999886751175,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.4",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.10199999809265137,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.5",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.11999999731779099,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.6",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.1379999965429306,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  },
+  {
+    "id": "vent.7",
+    "parent": null,
+    "positionBlenderM": [
+      -0.23000000417232513,
+      0.15600000321865082,
+      0.18000000715255737
+    ],
+    "assumption": "coarse shape; sourced envelope only"
+  }
+]

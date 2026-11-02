@@ -1,0 +1,1593 @@
+{
+  "device": "01",
+  "specVersion": "G1-0.1.0",
+  "units": "m",
+  "parts": [
+    {
+      "id": "device.root",
+      "parent": null,
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "operations": ""
+    },
+    {
+      "id": "body.base",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.0,
+        0.026000000536441803
+      ],
+      "operations": ""
+    },
+    {
+      "id": "body.upright",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.10499999672174454,
+        0.20499999821186066
+      ],
+      "operations": ""
+    },
+    {
+      "id": "body.arm",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.009999999776482582,
+        0.32199999690055847
+      ],
+      "operations": ""
+    },
+    {
+      "id": "body.foot-0.085-0.115",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.08500000089406967,
+        -0.11500000208616257,
+        0.004000000189989805
+      ],
+      "operations": ""
+    },
+    {
+      "id": "body.foot-0.0850.115",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.08500000089406967,
+        0.11500000208616257,
+        0.004000000189989805
+      ],
+      "operations": ""
+    },
+    {
+      "id": "body.foot0.085-0.115",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.08500000089406967,
+        -0.11500000208616257,
+        0.004000000189989805
+      ],
+      "operations": ""
+    },
+    {
+      "id": "body.foot0.0850.115",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.08500000089406967,
+        0.11500000208616257,
+        0.004000000189989805
+      ],
+      "operations": ""
+    },
+    {
+      "id": "teaching.rack",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.25,
+        -0.11999999731779099,
+        0.012000000104308128
+      ],
+      "operations": ""
+    },
+    {
+      "id": "joint.stage_z",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        0.0,
+        0.22370471060276031
+      ],
+      "operations": ""
+    },
+    {
+      "id": "stage.surface",
+      "parent": "joint.stage_z",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.22370471060276031
+      ],
+      "operations": ""
+    },
+    {
+      "id": "stage.support",
+      "parent": "joint.stage_z",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.05999999865889549,
+        0.19970470666885376
+      ],
+      "operations": ""
+    },
+    {
+      "id": "joint.stage_x",
+      "parent": "joint.stage_z",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        0.0,
+        0.22370471060276031
+      ],
+      "operations": ""
+    },
+    {
+      "id": "joint.stage_y",
+      "parent": "joint.stage_x",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        0.0,
+        0.22370471060276031
+      ],
+      "operations": ""
+    },
+    {
+      "id": "holder.base",
+      "parent": "joint.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.04500000178813934,
+        -0.03500000014901161,
+        0.2317047119140625
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.holder",
+      "parent": "joint.stage_y",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.07000000029802322,
+        -0.07000000029802322,
+        0.23470470309257507
+      ],
+      "operations": "specimen"
+    },
+    {
+      "id": "holder.lever",
+      "parent": "control.holder",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.07000000029802322,
+        -0.053999997675418854,
+        0.23470470309257507
+      ],
+      "operations": ""
+    },
+    {
+      "id": "specimen.slide",
+      "parent": "joint.stage_y",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.23070470988750458
+      ],
+      "operations": "specimen"
+    },
+    {
+      "id": "slide.glass",
+      "parent": "specimen.slide",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.23070470988750458
+      ],
+      "operations": ""
+    },
+    {
+      "id": "slide.synthetic_sample",
+      "parent": "specimen.slide",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.23121070861816406
+      ],
+      "operations": ""
+    },
+    {
+      "id": "slide.coverslip",
+      "parent": "specimen.slide",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.2313017100095749
+      ],
+      "operations": ""
+    },
+    {
+      "id": "joint.turret_mount",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        -0.009999999776482582,
+        0.28299999237060547
+      ],
+      "operations": ""
+    },
+    {
+      "id": "joint.turret",
+      "parent": "joint.turret_mount",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        -0.009999999776482582,
+        0.28299999237060547
+      ],
+      "operations": "turret"
+    },
+    {
+      "id": "turret.disc",
+      "parent": "joint.turret",
+      "kind": "MESH",
+      "worldBlenderM": [
+        4.582559592208879e-12,
+        -0.010776456445455551,
+        0.28589776158332825
+      ],
+      "operations": ""
+    },
+    {
+      "id": "turret.socket0",
+      "parent": "joint.turret",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.022516662254929543,
+        -0.022557035088539124,
+        0.27963533997535706
+      ],
+      "operations": ""
+    },
+    {
+      "id": "turret.socket1",
+      "parent": "joint.turret",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -1.862645149230957e-09,
+        -0.035114072263240814,
+        0.27627068758010864
+      ],
+      "operations": ""
+    },
+    {
+      "id": "turret.socket2",
+      "parent": "joint.turret",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.022516660392284393,
+        -0.02255704067647457,
+        0.27963533997535706
+      ],
+      "operations": ""
+    },
+    {
+      "id": "turret.socket3",
+      "parent": "joint.turret",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.022516664117574692,
+        0.0025570346042513847,
+        0.2863646447658539
+      ],
+      "operations": ""
+    },
+    {
+      "id": "turret.socket4",
+      "parent": "joint.turret",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -1.862645149230957e-09,
+        0.0151140745729208,
+        0.2897292971611023
+      ],
+      "operations": ""
+    },
+    {
+      "id": "turret.socket5",
+      "parent": "joint.turret",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.022516660392284393,
+        0.0025570373982191086,
+        0.2863646447658539
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.4",
+      "parent": "joint.turret",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.022516662254929543,
+        -0.022557035088539124,
+        0.27963533997535706
+      ],
+      "operations": "objectiveDetach,objectiveAttach"
+    },
+    {
+      "id": "objective.4.barrel",
+      "parent": "objective.4",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.025733238086104393,
+        -0.020763222128152847,
+        0.2657654881477356
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.4.tip",
+      "parent": "objective.4",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.029307212680578232,
+        -0.01877009868621826,
+        0.2503545582294464
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.4.band",
+      "parent": "objective.4",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.025206388905644417,
+        -0.02105703577399254,
+        0.26803725957870483
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.10",
+      "parent": "joint.turret",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -1.862645149230957e-09,
+        -0.035114072263240814,
+        0.27627068758010864
+      ],
+      "operations": "objectiveDetach,objectiveAttach"
+    },
+    {
+      "id": "objective.10.barrel",
+      "parent": "objective.10",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -2.170615909236062e-09,
+        -0.035114072263240814,
+        0.2574651837348938
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.10.tip",
+      "parent": "objective.10",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -2.512805519216954e-09,
+        -0.035114072263240814,
+        0.23657019436359406
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.10.band",
+      "parent": "objective.10",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -2.0591648386414363e-09,
+        -0.035114072263240814,
+        0.26427069306373596
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.20",
+      "parent": "joint.turret",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.022516660392284393,
+        -0.02255704067647457,
+        0.27963533997535706
+      ],
+      "operations": "objectiveDetach,objectiveAttach"
+    },
+    {
+      "id": "objective.20.barrel",
+      "parent": "objective.20",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0269839596003294,
+        -0.020065728574991226,
+        0.2603724002838135
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.20.tip",
+      "parent": "objective.20",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.03194762393832207,
+        -0.01729760505259037,
+        0.2389691025018692
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.20.band",
+      "parent": "objective.20",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.025206387042999268,
+        -0.021057041361927986,
+        0.26803725957870483
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.40",
+      "parent": "joint.turret",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.022516664117574692,
+        0.0025570346042513847,
+        0.2863646447658539
+      ],
+      "operations": "objectiveDetach,objectiveAttach"
+    },
+    {
+      "id": "objective.40.barrel",
+      "parent": "objective.40",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.027026325464248657,
+        0.010101845487952232,
+        0.2682667672634125
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.40.tip",
+      "parent": "objective.40",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.03203706443309784,
+        0.018484968692064285,
+        0.2481580227613449
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.40.band",
+      "parent": "objective.40",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.025206390768289566,
+        0.007057033944875002,
+        0.27557042241096497
+      ],
+      "operations": ""
+    },
+    {
+      "id": "objective.40.collar",
+      "parent": "objective.40",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.02789611741900444,
+        0.011557033285498619,
+        0.26477620005607605
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.turret_clamp",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.054999999701976776,
+        -0.04500000178813934,
+        0.3140000104904175
+      ],
+      "operations": "turretClamp"
+    },
+    {
+      "id": "turret.clamp_screw",
+      "parent": "control.turret_clamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.054999999701976776,
+        -0.04500000178813934,
+        0.3140000104904175
+      ],
+      "operations": ""
+    },
+    {
+      "id": "focus.external_axle",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.07999999821186066,
+        0.06300000101327896,
+        0.12600000202655792
+      ],
+      "operations": ""
+    },
+    {
+      "id": "stage.knob_support",
+      "parent": "joint.stage_z",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09000000357627869,
+        -0.01600000075995922,
+        0.21370470523834229
+      ],
+      "operations": ""
+    },
+    {
+      "id": "stage.knob_axle",
+      "parent": "joint.stage_z",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.01600000075995922,
+        0.19570471346378326
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.10499999672174454,
+        0.06300000101327896,
+        0.12600000202655792
+      ],
+      "operations": "coarse"
+    },
+    {
+      "id": "control.coarse.body",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.10499999672174454,
+        0.06300000101327896,
+        0.12600000202655792
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark0",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.08220000565052032,
+        0.12600000202655792
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark1",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.07657644897699356,
+        0.13957644999027252
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark2",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.06300000101327896,
+        0.1451999992132187
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark3",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.04942355304956436,
+        0.13957644999027252
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark4",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.043800000101327896,
+        0.12600000202655792
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark5",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.04942355304956436,
+        0.11242355406284332
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark6",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.06300000101327896,
+        0.10680000483989716
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.coarse.mark7",
+      "parent": "control.coarse",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.09799999743700027,
+        0.07657644897699356,
+        0.11242355406284332
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.12300000339746475,
+        0.06300000101327896,
+        0.12600000202655792
+      ],
+      "operations": "fine"
+    },
+    {
+      "id": "control.fine.body",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.12300000339746475,
+        0.06300000101327896,
+        0.12600000202655792
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark0",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.07259999960660934,
+        0.12600000202655792
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark1",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.06978822499513626,
+        0.13278822600841522
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark2",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.06300000101327896,
+        0.1356000006198883
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark3",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.05621177703142166,
+        0.13278822600841522
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark4",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.05340000241994858,
+        0.12600000202655792
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark5",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.05621177703142166,
+        0.11921177804470062
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark6",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.06300000101327896,
+        0.11640000343322754
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.fine.mark7",
+      "parent": "control.fine",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11600000411272049,
+        0.06978822499513626,
+        0.11921177804470062
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x",
+      "parent": "joint.stage_z",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.01600000075995922,
+        0.1837047040462494
+      ],
+      "operations": "stageX"
+    },
+    {
+      "id": "control.stage_x.body",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.01600000075995922,
+        0.1837047040462494
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark0",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11100000143051147,
+        -0.01600000075995922,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark1",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11334314942359924,
+        -0.01034314651042223,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark2",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.00800000037997961,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark3",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.12465685606002808,
+        -0.01034314651042223,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark4",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.12700000405311584,
+        -0.01600000075995922,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark5",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.12465685606002808,
+        -0.021656855940818787,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark6",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.024000000208616257,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_x.mark7",
+      "parent": "control.stage_x",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11334314942359924,
+        -0.021656855940818787,
+        0.19070470333099365
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y",
+      "parent": "joint.stage_z",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.01600000075995922,
+        0.2057047188282013
+      ],
+      "operations": "stageY"
+    },
+    {
+      "id": "control.stage_y.body",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.01600000075995922,
+        0.2057047188282013
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark0",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11100000143051147,
+        -0.01600000075995922,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark1",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11334314942359924,
+        -0.01034314651042223,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark2",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.00800000037997961,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark3",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.12465685606002808,
+        -0.01034314651042223,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark4",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.12700000405311584,
+        -0.01600000075995922,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark5",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.12465685606002808,
+        -0.021656855940818787,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark6",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11900000274181366,
+        -0.024000000208616257,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.stage_y.mark7",
+      "parent": "control.stage_y",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.11334314942359924,
+        -0.021656855940818787,
+        0.21270471811294556
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        -0.14900000393390656,
+        0.04500000178813934
+      ],
+      "operations": "brightness"
+    },
+    {
+      "id": "control.brightness.body",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.14900000393390656,
+        0.04500000178813934
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark0",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.01119999960064888,
+        -0.15600000321865082,
+        0.04500000178813934
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark1",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.007919595576822758,
+        -0.15600000321865082,
+        0.052919596433639526
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark2",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        6.858022109779144e-19,
+        -0.15600000321865082,
+        0.05620000138878822
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark3",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.007919595576822758,
+        -0.15600000321865082,
+        0.052919596433639526
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark4",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.01119999960064888,
+        -0.15600000321865082,
+        0.04500000178813934
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark5",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.007919595576822758,
+        -0.15600000321865082,
+        0.03708040714263916
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark6",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -2.057406632933743e-18,
+        -0.15600000321865082,
+        0.03380000218749046
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.brightness.mark7",
+      "parent": "control.brightness",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.007919595576822758,
+        -0.15600000321865082,
+        0.03708040714263916
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        -0.07800000160932541,
+        0.04500000178813934
+      ],
+      "operations": "field"
+    },
+    {
+      "id": "control.field.body",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.07800000160932541,
+        0.04500000178813934
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark0",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.02160000056028366,
+        -0.07800000160932541,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark1",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.015273506753146648,
+        -0.06272649765014648,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark2",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        1.3226185792852854e-18,
+        -0.05640000104904175,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark3",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.015273506753146648,
+        -0.06272649765014648,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark4",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.02160000056028366,
+        -0.07800000160932541,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark5",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.015273506753146648,
+        -0.09327350556850433,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark6",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -3.967855531060703e-18,
+        -0.09960000216960907,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.field.mark7",
+      "parent": "control.field",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.015273506753146648,
+        -0.09327350556850433,
+        0.052000001072883606
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.focus_limit",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.10000000149011612,
+        0.04100000113248825,
+        0.15000000596046448
+      ],
+      "operations": "focusLimit"
+    },
+    {
+      "id": "focus_limit.lever",
+      "parent": "control.focus_limit",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.10000000149011612,
+        0.029000001028180122,
+        0.15000000596046448
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.power",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.09000000357627869,
+        -0.15000000596046448,
+        0.041999999433755875
+      ],
+      "operations": "power"
+    },
+    {
+      "id": "power.switch",
+      "parent": "control.power",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.09000000357627869,
+        -0.15000000596046448,
+        0.041999999433755875
+      ],
+      "operations": ""
+    },
+    {
+      "id": "condenser",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.1899999976158142
+      ],
+      "operations": ""
+    },
+    {
+      "id": "condenser.body",
+      "parent": "condenser",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.1899999976158142
+      ],
+      "operations": ""
+    },
+    {
+      "id": "condenser.top",
+      "parent": "condenser",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.2070000022649765
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.aperture",
+      "parent": "condenser",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.027000000700354576,
+        -0.04399999976158142,
+        0.1899999976158142
+      ],
+      "operations": "aperture"
+    },
+    {
+      "id": "aperture.lever",
+      "parent": "control.aperture",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.027000000700354576,
+        -0.054999999701976776,
+        0.1899999976158142
+      ],
+      "operations": ""
+    },
+    {
+      "id": "field.lens",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.03500000014901161,
+        0.05999999865889549
+      ],
+      "operations": ""
+    },
+    {
+      "id": "tube.central",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        -0.009999999776482582,
+        0.3580000102519989
+      ],
+      "operations": ""
+    },
+    {
+      "id": "tube.camera_port",
+      "parent": "device.root",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.007000000216066837,
+        0.41200000047683716
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.left",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        -0.03099999949336052,
+        -0.07999999821186066,
+        0.37400001287460327
+      ],
+      "operations": "eyepieceDetach,eyepieceAttach"
+    },
+    {
+      "id": "eyepiece.left.insertion",
+      "parent": "eyepiece.left",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.03099999949336052,
+        -0.09004589170217514,
+        0.379800021648407
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.left.body",
+      "parent": "eyepiece.left",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.03099999949336052,
+        -0.11715248227119446,
+        0.39545002579689026
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.left.collar",
+      "parent": "eyepiece.left",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.03099999949336052,
+        -0.11983716487884521,
+        0.3970000147819519
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.left.eye_surface",
+      "parent": "eyepiece.left",
+      "kind": "MESH",
+      "worldBlenderM": [
+        -0.03099999949336052,
+        -0.13421319425106049,
+        0.4053000211715698
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.right",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.03099999949336052,
+        -0.07999999821186066,
+        0.37400001287460327
+      ],
+      "operations": "eyepieceDetach,eyepieceAttach"
+    },
+    {
+      "id": "eyepiece.right.insertion",
+      "parent": "eyepiece.right",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.03099999949336052,
+        -0.09004589170217514,
+        0.379800021648407
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.right.body",
+      "parent": "eyepiece.right",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.03099999949336052,
+        -0.11715248227119446,
+        0.39545002579689026
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.right.collar",
+      "parent": "eyepiece.right",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.03099999949336052,
+        -0.11983716487884521,
+        0.3970000147819519
+      ],
+      "operations": ""
+    },
+    {
+      "id": "eyepiece.right.eye_surface",
+      "parent": "eyepiece.right",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.03099999949336052,
+        -0.13421319425106049,
+        0.4053000211715698
+      ],
+      "operations": ""
+    },
+    {
+      "id": "control.tube_selector",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.06400000303983688,
+        -0.004999999888241291,
+        0.3580000102519989
+      ],
+      "operations": "tubeSelector"
+    },
+    {
+      "id": "tube.selector",
+      "parent": "control.tube_selector",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.06400000303983688,
+        -0.004999999888241291,
+        0.3580000102519989
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp",
+      "parent": "device.root",
+      "kind": "EMPTY",
+      "worldBlenderM": [
+        0.0,
+        0.17000000178813934,
+        0.0949999988079071
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp.housing",
+      "parent": "lamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.17000000178813934,
+        0.0949999988079071
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp.fin0",
+      "parent": "lamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.14900000393390656,
+        0.0949999988079071
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp.fin1",
+      "parent": "lamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.15700000524520874,
+        0.0949999988079071
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp.fin2",
+      "parent": "lamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.16500000655651093,
+        0.0949999988079071
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp.fin3",
+      "parent": "lamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.1730000078678131,
+        0.0949999988079071
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp.fin4",
+      "parent": "lamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.1809999942779541,
+        0.0949999988079071
+      ],
+      "operations": ""
+    },
+    {
+      "id": "lamp.fin5",
+      "parent": "lamp",
+      "kind": "MESH",
+      "worldBlenderM": [
+        0.0,
+        0.1889999955892563,
+        0.0949999988079071
+      ],
+      "operations": ""
+    }
+  ],
+  "saveReloadEqual": true,
+  "geometry": "rough exterior; idealized functional assembly; no hidden precise mechanism"
+}
