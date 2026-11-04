@@ -1355,7 +1355,7 @@
         "position": [
           -0.46165541,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -1463,27 +1463,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.46165541,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A01",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A02.covertile": {
       "rootPartId": "arc.A02.covertile",
@@ -1630,7 +1615,7 @@
         "position": [
           -0.39415541,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -1738,27 +1723,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.39415541,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A02",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A03.covertile": {
       "rootPartId": "arc.A03.covertile",
@@ -1905,7 +1875,7 @@
         "position": [
           -0.32665539,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -2013,27 +1983,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.32665539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A03",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A04.covertile": {
       "rootPartId": "arc.A04.covertile",
@@ -2180,7 +2135,7 @@
         "position": [
           -0.25915539,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -2288,27 +2243,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.25915539,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A04",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A05.covertile": {
       "rootPartId": "arc.A05.covertile",
@@ -2455,7 +2395,7 @@
         "position": [
           -0.19165537,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -2563,27 +2503,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.19165537,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A05",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A06.covertile": {
       "rootPartId": "arc.A06.covertile",
@@ -2730,7 +2655,7 @@
         "position": [
           -0.12415539,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -2838,27 +2763,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.12415539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A06",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A07.covertile": {
       "rootPartId": "arc.A07.covertile",
@@ -3005,7 +2915,7 @@
         "position": [
           -0.05665539,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -3113,27 +3023,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.05665539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A07",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A08.covertile": {
       "rootPartId": "arc.A08.covertile",
@@ -3280,7 +3175,7 @@
         "position": [
           0.01084461,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -3388,27 +3283,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.01084461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A08",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A09.covertile": {
       "rootPartId": "arc.A09.covertile",
@@ -3555,7 +3435,7 @@
         "position": [
           0.07834461,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -3663,27 +3543,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.07834461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A09",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A10.covertile": {
       "rootPartId": "arc.A10.covertile",
@@ -3830,7 +3695,7 @@
         "position": [
           0.14584462,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -3938,27 +3803,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.14584462,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A10",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A11.covertile": {
       "rootPartId": "arc.A11.covertile",
@@ -4105,7 +3955,7 @@
         "position": [
           0.21334463,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -4213,27 +4063,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.21334463,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A11",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.A12.covertile": {
       "rootPartId": "arc.A12.covertile",
@@ -4380,7 +4215,7 @@
         "position": [
           0.2808446,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -4488,27 +4323,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.2808446,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.A12",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B01.covertile": {
       "rootPartId": "arc.B01.covertile",
@@ -4653,9 +4473,9 @@
       ],
       "disposalPose": {
         "position": [
-          -0.4366554,
+          -0.46165541,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -4768,41 +4588,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.4366554,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.4366554,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B01",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B02.covertile": {
       "rootPartId": "arc.B02.covertile",
@@ -4947,9 +4738,9 @@
       ],
       "disposalPose": {
         "position": [
-          -0.36915541,
+          -0.39415541,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -5062,41 +4853,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.36915541,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.36915541,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B02",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B03.covertile": {
       "rootPartId": "arc.B03.covertile",
@@ -5241,9 +5003,9 @@
       ],
       "disposalPose": {
         "position": [
-          -0.30165538,
+          -0.32665539,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -5356,41 +5118,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.30165538,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.30165538,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B03",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B04.covertile": {
       "rootPartId": "arc.B04.covertile",
@@ -5535,9 +5268,9 @@
       ],
       "disposalPose": {
         "position": [
-          -0.23415539,
+          -0.25915539,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -5650,41 +5383,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.23415539,
-            1.09698915,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.23415539,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B04",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B05.covertile": {
       "rootPartId": "arc.B05.covertile",
@@ -5829,9 +5533,9 @@
       ],
       "disposalPose": {
         "position": [
-          -0.16665536,
+          -0.19165537,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -5944,41 +5648,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.16665536,
-            1.09698915,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.16665536,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B05",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B06.covertile": {
       "rootPartId": "arc.B06.covertile",
@@ -6123,9 +5798,9 @@
       ],
       "disposalPose": {
         "position": [
-          -0.09915539,
+          -0.12415539,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -6238,41 +5913,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.09915539,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.09915539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B06",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B07.covertile": {
       "rootPartId": "arc.B07.covertile",
@@ -6417,9 +6063,9 @@
       ],
       "disposalPose": {
         "position": [
-          -0.03165539,
+          -0.05665539,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -6532,41 +6178,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.03165539,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            -0.03165539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B07",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B08.covertile": {
       "rootPartId": "arc.B08.covertile",
@@ -6711,9 +6328,9 @@
       ],
       "disposalPose": {
         "position": [
-          0.03584461,
+          0.01084461,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -6826,41 +6443,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.03584461,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.03584461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B08",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B09.covertile": {
       "rootPartId": "arc.B09.covertile",
@@ -7005,9 +6593,9 @@
       ],
       "disposalPose": {
         "position": [
-          0.10334461,
+          0.07834461,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -7120,41 +6708,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.10334461,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.10334461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B09",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B10.covertile": {
       "rootPartId": "arc.B10.covertile",
@@ -7299,9 +6858,9 @@
       ],
       "disposalPose": {
         "position": [
-          0.17084463,
+          0.14584462,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -7414,41 +6973,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.17084463,
-            1.09698915,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.17084463,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B10",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B11.covertile": {
       "rootPartId": "arc.B11.covertile",
@@ -7593,9 +7123,9 @@
       ],
       "disposalPose": {
         "position": [
-          0.23834464,
+          0.21334463,
           1.09698915,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -7708,41 +7238,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.23834464,
-            1.09698915,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.23834464,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B11",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "arc.B12.covertile": {
       "rootPartId": "arc.B12.covertile",
@@ -7887,9 +7388,9 @@
       ],
       "disposalPose": {
         "position": [
-          0.3058446,
+          0.2808446,
           1.09698904,
-          0.81999999
+          0.60000002
         ],
         "quaternion": [
           0.0,
@@ -8002,41 +7503,12 @@
             0.7372773886
           ],
           "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.3058446,
-            1.09698904,
-            0.60000002
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        {
-          "position": [
-            0.3058446,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
         }
       ],
-      "disposalPoseBasis": "absolute world after documented 85-degree lid service pose; does not follow lid closing or robot motion",
-      "disposalDestinationRootId": "maintenance.disposal.covertile_rack",
-      "disposalSlotId": "used.B12",
+      "disposalPoseBasis": "absolute world front hand-off point after documented 85-degree lid service pose; the used Covertile then leaves the scene (disposed per laboratory procedure)",
       "disposalPathsVerified": true,
-      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited."
+      "disposalVerificationScope": "Full 85-degree lid pose; explicit world route; 24 old+24 new and old plate retained; existing cup-access robot pose. Normal resumption is separately audited.",
+      "disposalDestination": "offscreen_lab_waste"
     },
     "drawer.preload.insert": {
       "rootPartId": "drawer.preload.insert",
@@ -11049,8 +10521,6 @@
       "motionType": "operator_removal_transport",
       "newMachineDegreeOfFreedom": false,
       "ownerInvariant": "exactly one instance owner; reparent with world pose preservation; continuous interpolation; reverse path for reinsert",
-      "supportNotice": "Visible educational hand/cradle geometry follows each detached instance; not instrument equipment or a free-standing tank claim",
-      "serviceSupportRootId": "maintenance.support.synthetic.cleaning_kit",
       "runtimeTargetId": "synthetic.cleaning_kit",
       "homePose": {
         "position": [
@@ -11089,7 +10559,6 @@
         0.35
       ],
       "verified": true,
-      "serviceSupportPoseBasis": "part_root_local",
       "supplyPose": {
         "position": [
           0.49820001,
@@ -11165,76 +10634,12 @@
         "full-removal-validation.json": "maintenance-model/reports/full-removal-validation.json",
         "external-supply-validation.json": "maintenance-model/reports/external-supply-validation.json",
         "external-disposal-validation.json": "maintenance-model/reports/external-disposal-validation.json"
-      }
-    },
-    "ancillary.controller_handheld_scanner": {
-      "runtimeTargetId": "ancillary.controller_handheld_scanner",
-      "rootPartId": "ancillary.controller_handheld_scanner",
-      "modelNodeId": "ancillary.controller_handheld_scanner",
-      "homeParentId": "maintenance.root",
-      "homePose": {
-        "position": [
-          0.73000002,
-          0.91000003,
-          0.73000002
-        ],
-        "quaternion": [
-          0.0,
-          0.0,
-          -0.0,
-          1.0
-        ],
-        "frame": "gltf_world"
       },
-      "servicePose": {
-        "position": [
-          0.73000002,
-          0.91000003,
-          0.73000002
-        ],
-        "quaternion": [
-          0.0,
-          0.0,
-          -0.0,
-          1.0
-        ],
-        "frame": "gltf_world"
-      },
-      "restLocalPosition": [
-        0.73000002,
-        0.91000003,
-        0.73000002
-      ],
-      "restLocalQuaternion": [
-        0.0,
-        0.0,
-        -0.0,
-        1.0
-      ],
-      "motionType": "stationary_cleaning_target",
-      "parentMotion": "static",
-      "waypointOffsets": [
-        [
-          0,
-          0,
-          0
-        ]
-      ],
-      "extractionDelta": [
-        0,
-        0,
-        0
-      ],
-      "verified": true,
-      "pathStatus": "NOT_APPLICABLE_STATIONARY",
-      "sourcePages": [
-        108,
-        109
-      ],
-      "allowedActions": [
-        "wipe_surface"
-      ],
-      "notice": "External peripheral educational cleaning proxy; relocation is outside this task"
+      "offscreenRestOwners": [
+        "supply",
+        "service_cradle",
+        "disposal"
+      ]
     }
   },
   "wipeSurfaces": {
@@ -13668,43 +13073,6 @@
       "targetId": "sump.tray",
       "runtimeTargetId": "sump.tray"
     },
-    "ancillary.controller_handheld_scanner": {
-      "parentPartId": "ancillary.controller_handheld_scanner",
-      "anchorId": "maintenance.surface.external_scanner",
-      "centerLocal": [
-        0.0,
-        0.051,
-        0.0312
-      ],
-      "normalLocal": [
-        0.0,
-        0.0,
-        1.0
-      ],
-      "uLocal": [
-        1.0,
-        0.0,
-        0.0
-      ],
-      "vLocal": [
-        0.0,
-        1.0,
-        0.0
-      ],
-      "halfExtent": [
-        0.017,
-        0.006
-      ],
-      "sourcePages": [
-        108,
-        109
-      ],
-      "excludedTargets": [],
-      "educationalCoverageOnly": true,
-      "runtimeSurfaceId": "ancillary.controller_handheld_scanner",
-      "targetId": "ancillary.controller_handheld_scanner",
-      "runtimeTargetId": "ancillary.controller_handheld_scanner"
-    },
     "fascia.scanner_aperture": {
       "parentPartId": "fascia.scanner_aperture",
       "anchorId": "maintenance.surface.hood_scanner",
@@ -14759,10 +14127,10 @@
   },
   "counts": {
     "originalStableIds": 2151,
-    "derivedStableIds": 2795,
-    "addedIds": 644,
-    "baseVariantDerivedStableIds": 2767,
-    "variantAddedIds": 28
+    "derivedStableIds": 2758,
+    "addedIds": 607,
+    "baseVariantDerivedStableIds": 2758,
+    "variantAddedIds": 0
   },
   "changedExistingMeshes": [
     "arc.A01.front_bumper",
@@ -15951,7 +15319,7 @@
   },
   "auxiliaryVisibility": {
     "supportRoots": "maintenance.support.*: show only for active corresponding local operation or owned service_cradle/supply/disposal; never hide physical part to complete task",
-    "refreshPackage": "maintenance.refresh_kit: synthetic barcode package proxy",
+    "refreshPackage": "none: Refresh Kit is scanned off-screen; no package proxy in the scene",
     "kitDefaultOwner": "supply; actual part ownership/progress controlled by engine"
   },
   "latchBindings": [
@@ -16602,7 +15970,7 @@
       "basis": "widen fixed local cavity opening to facade width + 2mm; cut latch notch in previously solid bumper",
       "noAddedVolume": true
     },
-    "latchGapFinal": "Clamp only upper bumper vertex Z to +3 mm local to retain ≥1 mm handle clearance through allowed latch opening; schematic source bumper not manufacturer CAD."
+    "latchGapFinal": "Clamp only upper bumper vertex Z to +3 mm local to retain \u22651 mm handle clearance through allowed latch opening; schematic source bumper not manufacturer CAD."
   },
   "wholeModelClearancePatch": {
     "reason": "full-removal-validation fixed exterior conflicts; local functional opening correction authorized",
@@ -17476,7 +16844,7 @@
     "covertilePathCases": 72,
     "independentRuntimeAcceptance": "Separate motion-audit/v3 actual GLB/event replay including post-Refresh resumption; not granted by this local contract",
     "limitations": [
-      "Educational pivot, dimensions and external rack; not measured manufacturer apparatus or real service instructions.",
+      "Educational pivot, dimensions; not measured manufacturer apparatus or real service instructions.",
       "Sampled triangle BVH; not a full continuous-volume or hand/tool-envelope proof.",
       "Standard5 caps are boolean endpoints; DAB old/new cap progress is continuous.",
       "Old source-state saves containing unsafe disposal poses must not be silently migrated.",
@@ -17852,510 +17220,6 @@
     "verificationEvidence": "maintenance-model/reports/cleaning-projection-validation.json",
     "scope": "Existing selected well root X/Z and educational operation Y=1.111. This contract only aligns the selected well and operating point; it does not certify the delivery route, liquid level, needle insertion depth, or mixing mechanics. No mesh or old anchor is changed."
   },
-  "externalDisposalRack": {
-    "rootPartId": "maintenance.disposal.covertile_rack",
-    "purpose": "24 used Covertile instances after Refresh, retained outside the machine working envelope during normal operation",
-    "worldZ": 0.82,
-    "openMachineFacingSide": true,
-    "allOldInstancesRemainVisible": true,
-    "owner": "disposal",
-    "slots": {
-      "arc.A01.covertile": {
-        "slotId": "used.A01",
-        "pose": {
-          "position": [
-            -0.46165541,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A02.covertile": {
-        "slotId": "used.A02",
-        "pose": {
-          "position": [
-            -0.39415541,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A03.covertile": {
-        "slotId": "used.A03",
-        "pose": {
-          "position": [
-            -0.32665539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A04.covertile": {
-        "slotId": "used.A04",
-        "pose": {
-          "position": [
-            -0.25915539,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A05.covertile": {
-        "slotId": "used.A05",
-        "pose": {
-          "position": [
-            -0.19165537,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A06.covertile": {
-        "slotId": "used.A06",
-        "pose": {
-          "position": [
-            -0.12415539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A07.covertile": {
-        "slotId": "used.A07",
-        "pose": {
-          "position": [
-            -0.05665539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A08.covertile": {
-        "slotId": "used.A08",
-        "pose": {
-          "position": [
-            0.01084461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A09.covertile": {
-        "slotId": "used.A09",
-        "pose": {
-          "position": [
-            0.07834461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A10.covertile": {
-        "slotId": "used.A10",
-        "pose": {
-          "position": [
-            0.14584462,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A11.covertile": {
-        "slotId": "used.A11",
-        "pose": {
-          "position": [
-            0.21334463,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.A12.covertile": {
-        "slotId": "used.A12",
-        "pose": {
-          "position": [
-            0.2808446,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0
-      },
-      "arc.B01.covertile": {
-        "slotId": "used.B01",
-        "pose": {
-          "position": [
-            -0.4366554,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B02.covertile": {
-        "slotId": "used.B02",
-        "pose": {
-          "position": [
-            -0.36915541,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B03.covertile": {
-        "slotId": "used.B03",
-        "pose": {
-          "position": [
-            -0.30165538,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B04.covertile": {
-        "slotId": "used.B04",
-        "pose": {
-          "position": [
-            -0.23415539,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B05.covertile": {
-        "slotId": "used.B05",
-        "pose": {
-          "position": [
-            -0.16665536,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B06.covertile": {
-        "slotId": "used.B06",
-        "pose": {
-          "position": [
-            -0.09915539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B07.covertile": {
-        "slotId": "used.B07",
-        "pose": {
-          "position": [
-            -0.03165539,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B08.covertile": {
-        "slotId": "used.B08",
-        "pose": {
-          "position": [
-            0.03584461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B09.covertile": {
-        "slotId": "used.B09",
-        "pose": {
-          "position": [
-            0.10334461,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B10.covertile": {
-        "slotId": "used.B10",
-        "pose": {
-          "position": [
-            0.17084463,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B11.covertile": {
-        "slotId": "used.B11",
-        "pose": {
-          "position": [
-            0.23834464,
-            1.09698915,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      },
-      "arc.B12.covertile": {
-        "slotId": "used.B12",
-        "pose": {
-          "position": [
-            0.3058446,
-            1.09698904,
-            0.81999999
-          ],
-          "quaternion": [
-            0.0,
-            0.0,
-            0.6755901575,
-            0.7372773886
-          ],
-          "frame": "gltf_world"
-        },
-        "instanceMustRemainVisible": true,
-        "bankOffsetXM": 0.025
-      }
-    },
-    "addedNodeIds": [
-      "maintenance.disposal.covertile_rack",
-      "maintenance.disposal.covertile_rack.base",
-      "maintenance.disposal.covertile_rack.front_stop",
-      "maintenance.disposal.covertile_rack.left_rail",
-      "maintenance.disposal.covertile_rack.right_rail",
-      "maintenance.disposal.covertile_rack.divider.01",
-      "maintenance.disposal.covertile_rack.divider.02",
-      "maintenance.disposal.covertile_rack.divider.03",
-      "maintenance.disposal.covertile_rack.divider.04",
-      "maintenance.disposal.covertile_rack.divider.05",
-      "maintenance.disposal.covertile_rack.divider.06",
-      "maintenance.disposal.covertile_rack.divider.07",
-      "maintenance.disposal.covertile_rack.divider.08",
-      "maintenance.disposal.covertile_rack.divider.09",
-      "maintenance.disposal.covertile_rack.divider.10",
-      "maintenance.disposal.covertile_rack.divider.11",
-      "maintenance.disposal.covertile_rack.divider.12",
-      "maintenance.disposal.covertile_rack.divider.13",
-      "maintenance.disposal.covertile_rack.divider.14",
-      "maintenance.disposal.covertile_rack.divider.15",
-      "maintenance.disposal.covertile_rack.divider.16",
-      "maintenance.disposal.covertile_rack.divider.17",
-      "maintenance.disposal.covertile_rack.divider.18",
-      "maintenance.disposal.covertile_rack.divider.19",
-      "maintenance.disposal.covertile_rack.divider.20",
-      "maintenance.disposal.covertile_rack.divider.21",
-      "maintenance.disposal.covertile_rack.divider.22",
-      "maintenance.disposal.covertile_rack.divider.23"
-    ],
-    "sourcePages": [
-      164,
-      165
-    ],
-    "educationalSupportNotManufacturerPart": true,
-    "handoffRequiresContinuousTransport": true,
-    "storagePoseMustNotFollowArcLids": true,
-    "verificationStatus": "LOCAL_72_PATHS_AND_48_INSTANCES_VERIFIED_NORMAL_REPLAY_SEPARATE"
-  },
   "externalDisposalRevision": {
     "sourceContractSha256": "7f6cb1465c099089fef4e47b645614608b839386e224cd819837e790a0647976",
     "changedTargets": [
@@ -18390,7 +17254,7 @@
     },
     "newAbsoluteEndpointZ": 0.82,
     "bankBInterleaveWorldX": 0.025,
-    "reason": "Old parts remained inside normal robot working routes. Move continuously out to an external visible receiving rack; do not hide or teleport.",
+    "reason": "Old parts remained inside normal robot working routes. Move continuously out of the machine to a front hand-off point, then dispose off-screen.",
     "changedAnchorNodes": [
       {
         "stableId": "maintenance.anchor.arc.A01.covertile.disposal",
@@ -20033,5 +18897,29 @@
       "externalDisposalRevision.capConnectedPivotCorrection"
     ],
     "notice": "Historical contact/no-gap descriptions apply only to original model. Current capMotion and geometryDerivative supersede these claims with numerical display gaps. Runtime post_primary root orientation changes; root translations and mouth targets remain unchanged."
+  },
+  "covertileRackRemoval": {
+    "removedNodeRoot": "maintenance.disposal.covertile_rack",
+    "removedNodeCount": 28,
+    "reason": "Fictional external used-Covertile rack floated ~35 cm in front of the instrument; not present on the real BOND-PRIME. Per User Maintenance Guide A01 p.13, old Covertiles are removed from ARC lids and disposed according to laboratory procedures.",
+    "disposalBehaviour": "Route ends at the first front hand-off waypoint (Z=0.60); instances owned by disposal are not rendered."
+  },
+  "round2FloatingRemoval": {
+    "removedNodes": [
+      "ancillary.controller_handheld_scanner",
+      "ancillary.controller_handheld_scanner.grip",
+      "ancillary.controller_handheld_scanner.head",
+      "ancillary.controller_handheld_scanner.window",
+      "maintenance.surface.external_scanner",
+      "maintenance.support.synthetic.cleaning_kit",
+      "maintenance.support.synthetic.cleaning_kit.pad",
+      "maintenance.refresh_kit",
+      "maintenance.refresh_kit.box"
+    ],
+    "reason": "Unsupported floating items (bond-factcheck/second-report.md): handheld scanner ~335 mm from the housing, fictional Cleaning Kit pad, Refresh Kit box beside housing.right.",
+    "handheldScanner": "Real peripheral, but connected to the BOND Controller, not mounted on the instrument (User Manual A11 p.26, p.108-109). Cleaned off-screen at the Controller; the in-scene wipe target is dropped.",
+    "cleaningKit": "Still inserted into reagent lane 13 (A11 4.6, p.126-127). Outside the instrument (supply/service_cradle/disposal) it is off-screen on the bench; drawn only while installed or carried.",
+    "refreshKit": "Barcode scanned off-screen (A11 4.14, p.162-164); scan action unchanged.",
+    "resultModelSha256": "54ca1a3c527443103fe8322132e25b83865ab72ff57beb7ad6de774518bc4eba"
   }
 }
